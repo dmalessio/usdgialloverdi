@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U.S.D. Gialloverdi | Sito Ufficiale</title>
+    <meta name="description" content="Portale ufficiale dell'U.S.D. Gialloverdi realizzato al 100% in blocchi standard Gutenberg con la massima leggibilità e stile europeo ispirato a Norwich City ed FC Nantes.">
+    <link rel="icon" type="image/png" href="assets/img/stemma_usd_gialloverdi.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="wp-site-blocks bg-[#f8fafc] text-[#0f172a] font-sans antialiased">
+
+    <!-- 1. BARRA SUPERIORE UFFICIALE (Verde Scuro Istituzionale) -->
+    <!-- wp:group {"style":{"spacing":{"padding":{"top":"0.5rem","bottom":"0.5rem","left":"1rem","right":"1rem"}}},"backgroundColor":"club-green-dark","textColor":"white"} -->
+    <div class="bg-[#004222] text-white py-2 px-4 text-xs font-medium border-b border-[#003119]">
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-3">
+            <div class="flex items-center gap-3 flex-wrap">
+                <span class="inline-flex items-center bg-[#ffd200] text-[#004222] px-2.5 py-0.5 rounded font-bold text-xs uppercase tracking-wider">
+                    CALCIO DILETTANTISTICO
+                </span>
+                <span class="font-bold">U.S.D. GIALLOVERDI • CAMPIONATO REGIONALE</span>
+                <span class="text-white/40 hidden md:inline">|</span>
+                <span class="text-white/80 hidden md:inline">Matricola Federale: <strong class="text-[#ffd200]">998877</strong></span>
+            </div>
+            <div class="flex items-center gap-4 text-xs text-white/90">
+                <span>Stagione 2026-2027</span>
+                <span>•</span>
+                <a href="merchandising.html" class="text-[#ffd200] hover:text-white font-bold transition-colors">Store Ufficiale</a>
+            </div>
+        </div>
+    </div>
+    <!-- /wp:group -->
+
+    <!-- 2. INTESTAZIONE NAVBAR MODERNA (Bianca con accenti Giallo-Verdi) -->
+    <!-- wp:group {"tagName":"header","backgroundColor":"card-bg"} -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 px-4 py-3.5 shadow-sm">
+        <div class="max-w-7xl mx-auto flex items-center justify-between gap-6">
+            
+            <a href="#home" class="flex items-center gap-3.5 group text-decoration-none">
+                <div class="h-12 w-12 flex items-center justify-center shrink-0">
+                    <img src="assets/img/stemma_usd_gialloverdi.png" alt="Stemma U.S.D. Gialloverdi" class="w-full h-full object-contain drop-shadow">
+                </div>
+                <div>
+                    <span class="font-['Plus_Jakarta_Sans'] font-extrabold text-xl sm:text-2xl tracking-tight text-slate-900 block leading-tight group-hover:text-[#00592e] transition-colors">
+                        U.S.D. GIALLOVERDI
+                    </span>
+                    <span class="text-[10px] text-[#00592e] uppercase font-bold tracking-wider block">
+                        Fondata nel 1923 • Calcio e Territorio
+                    </span>
+                </div>
+            </a>
+
+            <!-- Menu Gutenberg -->
+            <nav class="hidden lg:flex items-center gap-6 font-['Plus_Jakarta_Sans'] font-semibold text-sm text-slate-700">
+                <a href="#comunicati" class="hover:text-[#00592e] transition-colors">Notizie</a>
+                <a href="#staff" class="hover:text-[#00592e] transition-colors">Club & Staff</a>
+                <a href="#scuola-calcio" class="hover:text-[#00592e] transition-colors">Scuola Calcio</a>
+                <a href="#documenti" class="hover:text-[#00592e] transition-colors">Modulistica</a>
+                <a href="merchandising.html" class="text-[#00592e] font-bold hover:text-[#004222] transition-colors">Merch</a>
+                <a href="#sponsor" class="hover:text-[#00592e] transition-colors">Partner</a>
+                <a href="#contatti" class="hover:text-[#00592e] transition-colors">Contatti</a>
+            </nav>
+
+            <div class="shrink-0">
+                <a href="#tesseramento" class="wp-element-button bg-[#00592e] hover:bg-[#004222] text-white text-xs sm:text-sm font-semibold px-4 py-2 rounded-md shadow-sm transition-all">
+                    Tesseramento 2026-2027
+                </a>
+            </div>
+
+        </div>
+    </header>
+    <!-- /wp:group -->
+
+    <!-- 3. HERO & MATCHDAY HIGHLIGHT -->
+    <!-- wp:cover -->
+    <section id="home" class="relative bg-gradient-to-b from-slate-900 to-slate-950 text-white py-16 px-4 overflow-hidden">
+        <div class="absolute inset-0 z-0 opacity-30">
+            <img src="assets/img/hero_gialloverdi.jpg" alt="Squadra Gialloverde in campo" class="w-full h-full object-cover">
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+            
+            <div class="lg:col-span-7 space-y-5">
+                <div class="flex items-center gap-2">
+                    <span class="bg-[#ffd200] text-[#004222] px-3 py-1 rounded font-bold text-xs uppercase tracking-wide">
+                        STAGIONE SPORTIVA 2026-2027
+                    </span>
+                    <span class="text-slate-300 text-xs font-medium">Stadio Comunale Gialloverde</span>
+                </div>
+
+                <h1 class="font-['Plus_Jakarta_Sans'] font-extrabold text-4xl sm:text-5xl lg:text-6xl text-white leading-tight tracking-tight">
+                    Passione, gioco di squadra e cuore gialloverde.
+                </h1>
+
+                <p class="text-slate-200 text-base sm:text-lg max-w-2xl leading-relaxed">
+                    Benvenuti sul portale ufficiale dell'<strong>U.S.D. Gialloverdi</strong>. Una piattaforma chiara, veloce e moderna per seguire i campionati della prima squadra e tutte le attività del settore giovanile.
+                </p>
+
+                <div class="flex flex-wrap gap-3 pt-2">
+                    <a href="#tesseramento" class="bg-[#ffd200] hover:bg-[#f5c400] text-[#004222] font-bold text-sm px-6 py-3 rounded-md shadow transition-all">
+                        Iscrizioni Scuola Calcio →
+                    </a>
+                    <a href="#staff" class="bg-white/10 hover:bg-white/20 text-white font-semibold text-sm px-6 py-3 rounded-md border border-white/20 transition-all">
+                        Organigramma e Staff
+                    </a>
+                </div>
+            </div>
+
+            <!-- Matchday Card -->
+            <div class="lg:col-span-5">
+                <div class="bg-[#ffd200] text-[#004222] p-6 rounded-xl shadow-2xl space-y-4">
+                    <div class="flex justify-between items-center pb-3 border-b border-[#004222]/15">
+                        <span class="bg-[#004222] text-white text-[11px] font-bold px-2.5 py-1 rounded uppercase tracking-wider">
+                            PROSSIMO TURNO
+                        </span>
+                        <span class="text-xs font-bold text-[#004222]">Campionato Regionale</span>
+                    </div>
+
+                    <div class="text-center py-2 space-y-3">
+                        <div class="flex justify-around items-center">
+                            <div class="text-center">
+                                <img src="assets/img/stemma_usd_gialloverdi.png" alt="USD Gialloverdi" class="h-14 w-14 mx-auto object-contain mb-1 drop-shadow">
+                                <span class="font-['Plus_Jakarta_Sans'] font-extrabold text-sm text-[#004222] block">GIALLOVERDI</span>
+                            </div>
+                            <div class="text-center">
+                                <span class="font-['Plus_Jakarta_Sans'] font-black text-2xl text-[#004222] block">VS</span>
+                                <span class="text-[11px] font-bold text-[#004222]/70 uppercase">Matchday</span>
+                            </div>
+                            <div class="text-center">
+                                <div class="w-14 h-14 rounded-full bg-[#004222] text-white font-bold flex items-center justify-center mx-auto mb-1 text-sm shadow">AVV</div>
+                                <span class="font-['Plus_Jakarta_Sans'] font-extrabold text-sm text-[#004222] block">AVVERSARIO</span>
+                            </div>
+                        </div>
+                        <p class="text-xs font-semibold text-[#004222] pt-1">Domenica alle ore 15:30 • Stadio Comunale Gialloverde</p>
+                    </div>
+
+                    <div class="pt-2">
+                        <a href="#comunicati" class="block w-full bg-[#004222] hover:bg-[#003119] text-white text-center text-xs font-bold py-2.5 rounded-md transition-colors">
+                            Centro Partita e Notizie →
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- /wp:cover -->
+
+    <!-- 4. ULTIME NOTIZIE -->
+    <section id="comunicati" class="py-16 px-4 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto space-y-8">
+            
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-3 pb-3 border-b border-slate-200">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-wider text-[#00592e] bg-[#ecfdf5] px-2.5 py-1 rounded">
+                        UFFICIO STAMPA
+                    </span>
+                    <h2 class="font-['Plus_Jakarta_Sans'] font-extrabold text-3xl sm:text-4xl text-slate-900 mt-2">
+                        Ultime notizie e comunicati
+                    </h2>
+                </div>
+                <span class="text-xs font-medium text-slate-500">Aggiornamenti ufficiali della società</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <div class="pro-card p-5 flex flex-col justify-between space-y-4 bg-white border border-slate-200 rounded-xl shadow-sm">
+                    <div class="space-y-2.5">
+                        <div class="flex justify-between items-center text-xs">
+                            <span class="bg-[#ecfdf5] text-[#00592e] font-bold px-2 py-0.5 rounded">Prima Squadra</span>
+                            <span class="text-slate-400">28 agosto 2026</span>
+                        </div>
+                        <h3 class="font-bold text-lg text-slate-900 leading-snug">Vittoria e ottime trame nell'amichevole precampionato</h3>
+                        <p class="text-slate-600 text-xs leading-relaxed">
+                            Successo per 3-1 nel test disputato al Comunale. Mister Valenti si dichiara soddisfatto della tenuta atletica e dell'intesa del gruppo.
+                        </p>
+                    </div>
+                    <span class="text-xs font-bold text-[#00592e] pt-3 border-t border-slate-100 block">Leggi il comunicato →</span>
+                </div>
+
+                <div class="pro-card p-5 flex flex-col justify-between space-y-4 bg-white border border-slate-200 rounded-xl shadow-sm">
+                    <div class="space-y-2.5">
+                        <div class="flex justify-between items-center text-xs">
+                            <span class="bg-[#fffbeb] text-[#b45309] font-bold px-2 py-0.5 rounded">Scuola Calcio</span>
+                            <span class="text-slate-400">25 agosto 2026</span>
+                        </div>
+                        <h3 class="font-bold text-lg text-slate-900 leading-snug">Aperte le pre-iscrizioni al settore giovanile 2026-2027</h3>
+                        <p class="text-slate-600 text-xs leading-relaxed">
+                            Definiti i quadri tecnici e gli orari di allenamento per le categorie piccoli amici, pulcini, esordienti, giovanissimi e allievi.
+                        </p>
+                    </div>
+                    <a href="#tesseramento" class="text-xs font-bold text-[#00592e] pt-3 border-t border-slate-100 block">Compila la domanda online →</a>
+                </div>
+
+                <div class="pro-card p-5 flex flex-col justify-between space-y-4 bg-white border border-slate-200 rounded-xl shadow-sm">
+                    <div class="space-y-2.5">
+                        <div class="flex justify-between items-center text-xs">
+                            <span class="bg-[#f0fdf4] text-[#15803d] font-bold px-2 py-0.5 rounded">Sponsor</span>
+                            <span class="text-slate-400">20 agosto 2026</span>
+                        </div>
+                        <h3 class="font-bold text-lg text-slate-900 leading-snug">Rinnovata la partnership tecnica con Macron</h3>
+                        <p class="text-slate-600 text-xs leading-relaxed">
+                            Presentati i nuovi kit da gioco ufficiali e il materiale per tutte le formazioni del vivaio gialloverde.
+                        </p>
+                    </div>
+                    <a href="#sponsor" class="text-xs font-bold text-[#00592e] pt-3 border-t border-slate-100 block">Dettagli partnership →</a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 5. DIRIGENZA E STAFF TECNICO -->
+    <section id="staff" class="py-16 px-4 bg-[#f8fafc] border-b border-slate-200">
+        <div class="max-w-7xl mx-auto space-y-8">
+            
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-3 pb-3 border-b border-slate-200">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-wider text-[#00592e] bg-[#ecfdf5] px-2.5 py-1 rounded">
+                        ORGANIGRAMMA SOCIETARIO
+                    </span>
+                    <h2 class="font-['Plus_Jakarta_Sans'] font-extrabold text-3xl sm:text-4xl text-slate-900 mt-2">
+                        Dirigenza e Staff Tecnico
+                    </h2>
+                    <p class="text-xs text-slate-500 mt-1">I responsabili e i professionisti alla guida dell'U.S.D. Gialloverdi.</p>
+                </div>
+                <span class="text-xs font-bold text-[#00592e] bg-white px-3 py-1.5 rounded-md border border-slate-200 shadow-sm">
+                    Organico 2026-2027
+                </span>
+            </div>
+
+            <!-- Griglia Staff a 4 Colonne -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <!-- wp:column -->
+            <div class="wp-block-column">
+                <div class="pro-card p-4 flex flex-col justify-between h-full group bg-white border border-slate-200 rounded-xl shadow-sm">
+                    <div>
+                        <!-- wp:image {"aspectRatio":"3/4","scale":"cover","sizeSlug":"large","linkDestination":"none","lightbox":{"enabled":true}} -->
+                        <figure class="wp-block-image size-large mb-3 relative overflow-hidden rounded-lg bg-slate-100">
+                            <img src="assets/img/player_1.jpg" alt="Roberto Monti" class="w-full h-48 object-cover object-top group-hover:scale-105 transition-transform duration-300"/>
+                            <span class="absolute top-2 left-2 bg-[#ffd200] text-[#004222] text-[10px] font-extrabold px-2 py-0.5 rounded shadow">PRESIDENTE</span>
+                        </figure>
+                        <!-- /wp:image -->
+
+                        <!-- wp:heading {"level":4} -->
+                        <h4 class="font-bold text-base text-slate-900 leading-snug group-hover:text-[#00592e] transition-colors">Roberto Monti</h4>
+                        <!-- /wp:heading -->
+
+                        <p class="text-xs text-[#00592e] font-semibold mt-0.5">Presidente del Club</p>
+                        <p class="text-[11px] text-slate-400">In carica dal 2018</p>
+                    </div>
+
+                    <div class="mt-3 pt-2.5 border-t border-slate-100">
+                        <!-- wp:details {"showContent":false,"summary":"Scheda tecnica"} -->
+                        <details class="wp-block-details text-xs"><summary>Dettagli incarico</summary>
+                            <p class="text-slate-600 text-[11px] leading-relaxed mt-1">
+                                • <strong>Incarico:</strong> Rappresentanza legale e istituzionale<br>• <strong>Progetto:</strong> Crescita del vivaio e sostenibilità sportiva
+                            </p>
+                        </details>
+                        <!-- /wp:details -->
+                    </div>
+                </div>
+            </div>
+            <!-- /wp:column -->
+            <!-- wp:column -->
+            <div class="wp-block-column">
+                <div class="pro-card p-4 flex flex-col justify-between h-full group bg-white border border-slate-200 rounded-xl shadow-sm">
+                    <div>
+                        <!-- wp:image {"aspectRatio":"3/4","scale":"cover","sizeSlug":"large","linkDestination":"none","lightbox":{"enabled":true}} -->
+                        <figure class="wp-block-image size-large mb-3 relative overflow-hidden rounded-lg bg-slate-100">
+                            <img src="assets/img/player_2.jpg" alt="Claudio Barone" class="w-full h-48 object-cover object-top group-hover:scale-105 transition-transform duration-300"/>
+                            <span class="absolute top-2 left-2 bg-[#ffd200] text-[#004222] text-[10px] font-extrabold px-2 py-0.5 rounded shadow">VICE PRESIDENTE</span>
+                        </figure>
+                        <!-- /wp:image -->
+
+                        <!-- wp:heading {"level":4} -->
+                        <h4 class="font-bold text-base text-slate-900 leading-snug group-hover:text-[#00592e] transition-colors">Claudio Barone</h4>
+                        <!-- /wp:heading -->
+
+                        <p class="text-xs text-[#00592e] font-semibold mt-0.5">Vice Presidente</p>
+                        <p class="text-[11px] text-slate-400">Coordinamento societario</p>
+                    </div>
+
+                    <div class="mt-3 pt-2.5 border-t border-slate-100">
+                        <!-- wp:details {"showContent":false,"summary":"Scheda tecnica"} -->
+                        <details class="wp-block-details text-xs"><summary>Dettagli incarico</summary>
+                            <p class="text-slate-600 text-[11px] leading-relaxed mt-1">
+                                • <strong>Incarico:</strong> Relazioni istituzionali e partner<br>• <strong>Progetto:</strong> Sviluppo strutture e logistica
+                            </p>
+                        </details>
+                        <!-- /wp:details -->
+                    </div>
+                </div>
+            </div>
+            <!-- /wp:column -->
+            <!-- wp:column -->
+            <div class="wp-block-column">
+                <div class="pro-card p-4 flex flex-col justify-between h-full group bg-white border border-slate-200 rounded-xl shadow-sm">
+                    <div>
+                        <!-- wp:image {"aspectRatio":"3/4","scale":"cover","sizeSlug":"large","linkDestination":"none","lightbox":{"enabled":true}} -->
+                        <figure class="wp-block-image size-large mb-3 relative overflow-hidden rounded-lg bg-slate-100">
+                            <img src="assets/img/player_3.jpg" alt="Alessandro Conti" class="w-full h-48 object-cover object-top group-hover:scale-105 transition-transform duration-300"/>
+                            <span class="absolute top-2 left-2 bg-[#ffd200] text-[#004222] text-[10px] font-extrabold px-2 py-0.5 rounded shadow">DIRETTORE SPORTIVO</span>
+                        </figure>
+                        <!-- /wp:image -->
+
+                        <!-- wp:heading {"level":4} -->
+                        <h4 class="font-bold text-base text-slate-900 leading-snug group-hover:text-[#00592e] transition-colors">Alessandro Conti</h4>
+                        <!-- /wp:heading -->
+
+                        <p class="text-xs text-[#00592e] font-semibold mt-0.5">Direttore Sportivo</p>
+                        <p class="text-[11px] text-slate-400">Gestione area tecnica</p>
+                    </div>
+
+                    <div class="mt-3 pt-2.5 border-t border-slate-100">
+                        <!-- wp:details {"showContent":false,"summary":"Scheda tecnica"} -->
+                        <details class="wp-block-details text-xs"><summary>Dettagli incarico</summary>
+                            <p class="text-slate-600 text-[11px] leading-relaxed mt-1">
+                                • <strong>Qualifica:</strong> Patentino FIGC Direttore Sportivo<br>• <strong>Attività:</strong> Scouting e prima squadra
+                            </p>
+                        </details>
+                        <!-- /wp:details -->
+                    </div>
+                </div>
+            </div>
+            <!-- /wp:column -->
+            <!-- wp:column -->
+            <div class="wp-block-column">
+                <div class="pro-card p-4 flex flex-col justify-between h-full group bg-white border border-slate-200 rounded-xl shadow-sm">
+                    <div>
+                        <!-- wp:image {"aspectRatio":"3/4","scale":"cover","sizeSlug":"large","linkDestination":"none","lightbox":{"enabled":true}} -->
+                        <figure class="wp-block-image size-large mb-3 relative overflow-hidden rounded-lg bg-slate-100">
+                            <img src="assets/img/player_7.jpg" alt="Marco Valenti" class="w-full h-48 object-cover object-top group-hover:scale-105 transition-transform duration-300"/>
+                            <span class="absolute top-2 left-2 bg-[#ffd200] text-[#004222] text-[10px] font-extrabold px-2 py-0.5 rounded shadow">ALLENATORE</span>
+                        </figure>
+                        <!-- /wp:image -->
+
+                        <!-- wp:heading {"level":4} -->
+                        <h4 class="font-bold text-base text-slate-900 leading-snug group-hover:text-[#00592e] transition-colors">Marco Valenti</h4>
+                        <!-- /wp:heading -->
+
+                        <p class="text-xs text-[#00592e] font-semibold mt-0.5">Allenatore Prima Squadra</p>
+                        <p class="text-[11px] text-slate-400">Licenza UEFA A</p>
+                    </div>
+
+                    <div class="mt-3 pt-2.5 border-t border-slate-100">
+                        <!-- wp:details {"showContent":false,"summary":"Scheda tecnica"} -->
+                        <details class="wp-block-details text-xs"><summary>Dettagli incarico</summary>
+                            <p class="text-slate-600 text-[11px] leading-relaxed mt-1">
+                                • <strong>Panchina:</strong> 120 gare ufficiali<br>• <strong>Modulo tattico:</strong> 4-3-3 propositivo<br>• <strong>Nel club dal:</strong> 2022
+                            </p>
+                        </details>
+                        <!-- /wp:details -->
+                    </div>
+                </div>
+            </div>
+            <!-- /wp:column -->
+            <!-- wp:column -->
+            <div class="wp-block-column">
+                <div class="pro-card p-4 flex flex-col justify-between h-full group bg-white border border-slate-200 rounded-xl shadow-sm">
+                    <div>
+                        <!-- wp:image {"aspectRatio":"3/4","scale":"cover","sizeSlug":"large","linkDestination":"none","lightbox":{"enabled":true}} -->
+                        <figure class="wp-block-image size-large mb-3 relative overflow-hidden rounded-lg bg-slate-100">
+                            <img src="assets/img/player_6.jpg" alt="Davide Rinaldi" class="w-full h-48 object-cover object-top group-hover:scale-105 transition-transform duration-300"/>
+                            <span class="absolute top-2 left-2 bg-[#ffd200] text-[#004222] text-[10px] font-extrabold px-2 py-0.5 rounded shadow">VICE ALLENATORE</span>
+                        </figure>
+                        <!-- /wp:image -->
+
+                        <!-- wp:heading {"level":4} -->
+                        <h4 class="font-bold text-base text-slate-900 leading-snug group-hover:text-[#00592e] transition-colors">Davide Rinaldi</h4>
+                        <!-- /wp:heading -->
+
+                        <p class="text-xs text-[#00592e] font-semibold mt-0.5">Vice Allenatore & Tattico</p>
+                        <p class="text-[11px] text-slate-400">Match analyst</p>
+                    </div>
+
+                    <div class="mt-3 pt-2.5 border-t border-slate-100">
+                        <!-- wp:details {"showContent":false,"summary":"Scheda tecnica"} -->
+                        <details class="wp-block-details text-xs"><summary>Dettagli incarico</summary>
+                            <p class="text-slate-600 text-[11px] leading-relaxed mt-1">
+                                • <strong>Competenze:</strong> Video analisi e tattica applicata<br>• <strong>Nel club dal:</strong> 2023
+                            </p>
+                        </details>
+                        <!-- /wp:details -->
+                    </div>
+                </div>
+            </div>
+            <!-- /wp:column -->
+            <!-- wp:column -->
+            <div class="wp-block-column">
+                <div class="pro-card p-4 flex flex-col justify-between h-full group bg-white border border-slate-200 rounded-xl shadow-sm">
+                    <div>
+                        <!-- wp:image {"aspectRatio":"3/4","scale":"cover","sizeSlug":"large","linkDestination":"none","lightbox":{"enabled":true}} -->
+                        <figure class="wp-block-image size-large mb-3 relative overflow-hidden rounded-lg bg-slate-100">
+                            <img src="assets/img/player_4.jpg" alt="Luca Ferri" class="w-full h-48 object-cover object-top group-hover:scale-105 transition-transform duration-300"/>
+                            <span class="absolute top-2 left-2 bg-[#ffd200] text-[#004222] text-[10px] font-extrabold px-2 py-0.5 rounded shadow">PREPARATORE ATLETICO</span>
+                        </figure>
+                        <!-- /wp:image -->
+
+                        <!-- wp:heading {"level":4} -->
+                        <h4 class="font-bold text-base text-slate-900 leading-snug group-hover:text-[#00592e] transition-colors">Luca Ferri</h4>
+                        <!-- /wp:heading -->
+
+                        <p class="text-xs text-[#00592e] font-semibold mt-0.5">Preparatore Atletico</p>
+                        <p class="text-[11px] text-slate-400">Scienze Motorie</p>
+                    </div>
+
+                    <div class="mt-3 pt-2.5 border-t border-slate-100">
+                        <!-- wp:details {"showContent":false,"summary":"Scheda tecnica"} -->
+                        <details class="wp-block-details text-xs"><summary>Dettagli incarico</summary>
+                            <p class="text-slate-600 text-[11px] leading-relaxed mt-1">
+                                • <strong>Specializzazione:</strong> Recupero infortuni e carichi di lavoro<br>• <strong>Nel club dal:</strong> 2021
+                            </p>
+                        </details>
+                        <!-- /wp:details -->
+                    </div>
+                </div>
+            </div>
+            <!-- /wp:column -->
+            <!-- wp:column -->
+            <div class="wp-block-column">
+                <div class="pro-card p-4 flex flex-col justify-between h-full group bg-white border border-slate-200 rounded-xl shadow-sm">
+                    <div>
+                        <!-- wp:image {"aspectRatio":"3/4","scale":"cover","sizeSlug":"large","linkDestination":"none","lightbox":{"enabled":true}} -->
+                        <figure class="wp-block-image size-large mb-3 relative overflow-hidden rounded-lg bg-slate-100">
+                            <img src="assets/img/player_8.jpg" alt="Andrea Moretti" class="w-full h-48 object-cover object-top group-hover:scale-105 transition-transform duration-300"/>
+                            <span class="absolute top-2 left-2 bg-[#ffd200] text-[#004222] text-[10px] font-extrabold px-2 py-0.5 rounded shadow">SETTORE GIOVANILE</span>
+                        </figure>
+                        <!-- /wp:image -->
+
+                        <!-- wp:heading {"level":4} -->
+                        <h4 class="font-bold text-base text-slate-900 leading-snug group-hover:text-[#00592e] transition-colors">Andrea Moretti</h4>
+                        <!-- /wp:heading -->
+
+                        <p class="text-xs text-[#00592e] font-semibold mt-0.5">Resp. Settore Giovanile</p>
+                        <p class="text-[11px] text-slate-400">Attività di base</p>
+                    </div>
+
+                    <div class="mt-3 pt-2.5 border-t border-slate-100">
+                        <!-- wp:details {"showContent":false,"summary":"Scheda tecnica"} -->
+                        <details class="wp-block-details text-xs"><summary>Dettagli incarico</summary>
+                            <p class="text-slate-600 text-[11px] leading-relaxed mt-1">
+                                • <strong>Metodologia:</strong> Crescita tecnica ed educativa<br>• <strong>Coordina:</strong> 150 atleti del vivaio
+                            </p>
+                        </details>
+                        <!-- /wp:details -->
+                    </div>
+                </div>
+            </div>
+            <!-- /wp:column -->
+            <!-- wp:column -->
+            <div class="wp-block-column">
+                <div class="pro-card p-4 flex flex-col justify-between h-full group bg-white border border-slate-200 rounded-xl shadow-sm">
+                    <div>
+                        <!-- wp:image {"aspectRatio":"3/4","scale":"cover","sizeSlug":"large","linkDestination":"none","lightbox":{"enabled":true}} -->
+                        <figure class="wp-block-image size-large mb-3 relative overflow-hidden rounded-lg bg-slate-100">
+                            <img src="assets/img/player_9.jpg" alt="Matteo Sala" class="w-full h-48 object-cover object-top group-hover:scale-105 transition-transform duration-300"/>
+                            <span class="absolute top-2 left-2 bg-[#ffd200] text-[#004222] text-[10px] font-extrabold px-2 py-0.5 rounded shadow">STAFF MEDICO</span>
+                        </figure>
+                        <!-- /wp:image -->
+
+                        <!-- wp:heading {"level":4} -->
+                        <h4 class="font-bold text-base text-slate-900 leading-snug group-hover:text-[#00592e] transition-colors">Matteo Sala</h4>
+                        <!-- /wp:heading -->
+
+                        <p class="text-xs text-[#00592e] font-semibold mt-0.5">Fisioterapista Ufficiale</p>
+                        <p class="text-[11px] text-slate-400">Massofisioterapista</p>
+                    </div>
+
+                    <div class="mt-3 pt-2.5 border-t border-slate-100">
+                        <!-- wp:details {"showContent":false,"summary":"Scheda tecnica"} -->
+                        <details class="wp-block-details text-xs"><summary>Dettagli incarico</summary>
+                            <p class="text-slate-600 text-[11px] leading-relaxed mt-1">
+                                • <strong>Specializzazione:</strong> Fisioterapia sportiva e riabilitazione<br>• <strong>Nel club dal:</strong> 2020
+                            </p>
+                        </details>
+                        <!-- /wp:details -->
+                    </div>
+                </div>
+            </div>
+            <!-- /wp:column -->
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 6. SCUOLA CALCIO E ORARI -->
+    <section id="scuola-calcio" class="py-16 px-4 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto space-y-8">
+            
+            <div>
+                <span class="text-xs font-bold uppercase tracking-wider text-[#00592e] bg-[#ecfdf5] px-2.5 py-1 rounded">
+                    SETTORE GIOVANILE
+                </span>
+                <h2 class="font-['Plus_Jakarta_Sans'] font-extrabold text-3xl sm:text-4xl text-slate-900 mt-2">
+                    Scuola calcio e orari allenamenti
+                </h2>
+                <p class="text-xs text-slate-500 mt-1">Tutte le sessioni si svolgono presso il Centro Sportivo Comunale Gialloverde.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-xs">
+                
+                <div class="pro-card p-5 border-l-4 border-l-[#ffd200] bg-white border border-slate-200 rounded-xl">
+                    <span class="font-bold text-base text-slate-900 block font-['Plus_Jakarta_Sans']">Piccoli amici e primi calci</span>
+                    <span class="text-[#00592e] font-bold block mb-2">5 – 8 anni (2017 – 2019)</span>
+                    <p class="text-slate-600">Martedì e giovedì: 15:30 – 17:00</p>
+                </div>
+
+                <div class="pro-card p-5 border-l-4 border-l-[#00592e] bg-white border border-slate-200 rounded-xl">
+                    <span class="font-bold text-base text-slate-900 block font-['Plus_Jakarta_Sans']">Categoria pulcini</span>
+                    <span class="text-[#00592e] font-bold block mb-2">9 – 10 anni (2015 – 2016)</span>
+                    <p class="text-slate-600">Lunedì e mercoledì: 15:30 – 17:15</p>
+                </div>
+
+                <div class="pro-card p-5 border-l-4 border-l-sky-500 bg-white border border-slate-200 rounded-xl">
+                    <span class="font-bold text-base text-slate-900 block font-['Plus_Jakarta_Sans']">Categoria esordienti</span>
+                    <span class="text-sky-700 font-bold block mb-2">11 – 12 anni (2013 – 2014)</span>
+                    <p class="text-slate-600">Martedì e giovedì: 17:00 – 18:45</p>
+                </div>
+
+                <div class="pro-card p-5 border-l-4 border-l-indigo-500 bg-white border border-slate-200 rounded-xl">
+                    <span class="font-bold text-base text-slate-900 block font-['Plus_Jakarta_Sans']">Giovanissimi (Under 14 e Under 15)</span>
+                    <span class="text-indigo-700 font-bold block mb-2">13 – 14 anni (2011 – 2012)</span>
+                    <p class="text-slate-600">Lunedì, mercoledì e venerdì: 17:30 – 19:30</p>
+                </div>
+
+                <div class="pro-card p-5 border-l-4 border-l-rose-500 bg-white border border-slate-200 rounded-xl">
+                    <span class="font-bold text-base text-slate-900 block font-['Plus_Jakarta_Sans']">Allievi (Under 16 e Under 17)</span>
+                    <span class="text-rose-700 font-bold block mb-2">15 – 16 anni (2009 – 2010)</span>
+                    <p class="text-slate-600">Martedì, giovedì e venerdì: 18:00 – 20:00</p>
+                </div>
+
+                <div class="bg-[#ecfdf5] border border-[#a7f3d0] p-5 rounded-xl flex flex-col justify-between">
+                    <div>
+                        <span class="font-bold text-base text-[#004222] block font-['Plus_Jakarta_Sans']">Iscrivi tuo figlio</span>
+                        <p class="text-[#004222]/80 text-xs mt-1">Compila la domanda telematica per avviare il tesseramento societario.</p>
+                    </div>
+                    <a href="#tesseramento" class="mt-4 inline-block text-center bg-[#00592e] text-white font-bold text-xs py-2 px-4 rounded-md shadow-sm">
+                        Compila la domanda online →
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 7. MODULISTICA (wp:file) -->
+    <section id="documenti" class="py-16 px-4 bg-[#f8fafc] border-b border-slate-200">
+        <div class="max-w-7xl mx-auto space-y-8">
+            
+            <div>
+                <span class="text-xs font-bold uppercase tracking-wider text-[#00592e] bg-[#ecfdf5] px-2.5 py-1 rounded">
+                    SEGRETERIA DIGITALE
+                </span>
+                <h2 class="font-['Plus_Jakarta_Sans'] font-extrabold text-3xl sm:text-4xl text-slate-900 mt-2">
+                    Modulistica e download PDF
+                </h2>
+                <p class="text-xs text-slate-500 mt-1">Scarica la modulistica per iscrizioni, visite mediche e tesseramenti.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-xs">
+                
+                <div class="pro-card p-5 flex flex-col justify-between space-y-4 bg-white border border-slate-200 rounded-xl">
+                    <div>
+                        <span class="text-[#00592e] font-bold text-[10px] uppercase block">SETTORE GIOVANILE</span>
+                        <h4 class="font-bold text-base text-slate-900 mt-1">Modulo di pre-iscrizione completo</h4>
+                        <p class="text-slate-500 mt-1">Dati anagrafici, taglie kit e consensi informati.</p>
+                    </div>
+                    <a href="assets/docs/Modulo_Preiscrizione_COMPLETO.pdf" download class="bg-[#00592e] hover:bg-[#004222] text-white font-semibold text-center py-2 px-4 rounded-md transition-colors block">
+                        Scarica PDF (Completo)
+                    </a>
+                </div>
+
+                <div class="pro-card p-5 flex flex-col justify-between space-y-4 bg-white border border-slate-200 rounded-xl">
+                    <div>
+                        <span class="text-[#b45309] font-bold text-[10px] uppercase block">SCUOLA CALCIO</span>
+                        <h4 class="font-bold text-base text-slate-900 mt-1">Scheda iscrizione scuola calcio</h4>
+                        <p class="text-slate-500 mt-1">Modulo per le categorie primi calci e pulcini.</p>
+                    </div>
+                    <a href="assets/docs/scheda_iscrizione_scuola.pdf" download class="bg-[#00592e] hover:bg-[#004222] text-white font-semibold text-center py-2 px-4 rounded-md transition-colors block">
+                        Scarica PDF (Scuola Calcio)
+                    </a>
+                </div>
+
+                <div class="pro-card p-5 flex flex-col justify-between space-y-4 bg-white border border-slate-200 rounded-xl">
+                    <div>
+                        <span class="text-sky-700 font-bold text-[10px] uppercase block">TESSERAMENTO MINORI</span>
+                        <h4 class="font-bold text-base text-slate-900 mt-1">Consenso tesseramento minori</h4>
+                        <p class="text-slate-500 mt-1">Liberatoria e autorizzazione genitoriale.</p>
+                    </div>
+                    <a href="assets/docs/ISCRIZIONE MINORI 2025.pdf" download class="bg-[#00592e] hover:bg-[#004222] text-white font-semibold text-center py-2 px-4 rounded-md transition-colors block">
+                        Scarica PDF (Minori)
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 8. PARTNER E SPONSOR REALI ESISTENTI -->
+    <section id="sponsor" class="py-16 px-4 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto space-y-8">
+            
+            <div class="max-w-3xl mx-auto text-center space-y-2">
+                <span class="text-xs font-bold uppercase tracking-wider text-[#00592e] bg-[#ecfdf5] px-2.5 py-1 rounded">
+                    I NOSTRI PARTNER
+                </span>
+                <h2 class="font-['Plus_Jakarta_Sans'] font-extrabold text-3xl sm:text-4xl text-slate-900">
+                    Sponsor e Partner Ufficiali
+                </h2>
+                <p class="text-xs text-slate-500">I brand che sostengono il progetto sportivo ed educativo dell'U.S.D. Gialloverdi</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Sponsor 1: Macron -->
+                <a href="https://www.macron.com/" target="_blank" rel="noopener noreferrer" class="pro-card p-6 flex flex-col justify-between group border-2 border-[#ffd200] hover:border-[#00592e] transition-all bg-white rounded-xl shadow-sm">
+                    <div class="flex items-center gap-4">
+                        <div class="w-16 h-16 rounded-lg bg-[#141821] p-2 flex items-center justify-center shrink-0">
+                            <img src="assets/img/sponsor_macron.png" alt="Macron" class="max-w-full max-h-full object-contain">
+                        </div>
+                        <div>
+                            <span class="text-[10px] font-bold text-[#b45309] uppercase block">SPONSOR TECNICO</span>
+                            <h4 class="font-bold text-xl text-slate-900 group-hover:text-[#00592e] transition-colors">Macron</h4>
+                            <p class="text-xs text-slate-500">Kit gara e abbigliamento sportivo</p>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-100 flex justify-between items-center text-xs font-semibold text-[#00592e]">
+                        <span>macron.com</span>
+                        <span>↗</span>
+                    </div>
+                </a>
+
+                <!-- Sponsor 2: San Benedetto -->
+                <a href="https://www.sanbenedetto.it/" target="_blank" rel="noopener noreferrer" class="pro-card p-6 flex flex-col justify-between group hover:border-[#00592e] transition-all bg-white border border-slate-200 rounded-xl shadow-sm">
+                    <div class="flex items-center gap-4">
+                        <div class="w-16 h-16 rounded-lg bg-[#0072bb] p-2 flex items-center justify-center shrink-0">
+                            <img src="assets/img/sponsor_sanbenedetto.png" alt="San Benedetto" class="max-w-full max-h-full object-contain">
+                        </div>
+                        <div>
+                            <span class="text-[10px] font-bold text-[#00592e] uppercase block">BEVERAGE PARTNER</span>
+                            <h4 class="font-bold text-xl text-slate-900 group-hover:text-[#00592e] transition-colors">San Benedetto</h4>
+                            <p class="text-xs text-slate-500">Idratazione ufficiale degli atleti</p>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-100 flex justify-between items-center text-xs font-semibold text-slate-600 group-hover:text-[#00592e]">
+                        <span>sanbenedetto.it</span>
+                        <span>↗</span>
+                    </div>
+                </a>
+
+                <!-- Sponsor 3: Lavazza -->
+                <a href="https://www.lavazza.it/" target="_blank" rel="noopener noreferrer" class="pro-card p-6 flex flex-col justify-between group hover:border-[#00592e] transition-all bg-white border border-slate-200 rounded-xl shadow-sm">
+                    <div class="flex items-center gap-4">
+                        <div class="w-16 h-16 rounded-lg bg-[#0e1b3d] p-2 flex items-center justify-center shrink-0">
+                            <img src="assets/img/sponsor_lavazza.png" alt="Lavazza" class="max-w-full max-h-full object-contain">
+                        </div>
+                        <div>
+                            <span class="text-[10px] font-bold text-sky-700 uppercase block">OFFICIAL PARTNER</span>
+                            <h4 class="font-bold text-xl text-slate-900 group-hover:text-[#00592e] transition-colors">Lavazza</h4>
+                            <p class="text-xs text-slate-500">Eccellenza e ospitalità sportiva</p>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-100 flex justify-between items-center text-xs font-semibold text-slate-600 group-hover:text-[#00592e]">
+                        <span>lavazza.it</span>
+                        <span>↗</span>
+                    </div>
+                </a>
+
+                <!-- Sponsor 4: Decathlon -->
+                <a href="https://www.decathlon.it/" target="_blank" rel="noopener noreferrer" class="pro-card p-6 flex flex-col justify-between group hover:border-[#00592e] transition-all bg-white border border-slate-200 rounded-xl shadow-sm">
+                    <div class="flex items-center gap-4">
+                        <div class="w-16 h-16 rounded-lg bg-[#0082ca] p-2 flex items-center justify-center shrink-0">
+                            <img src="assets/img/sponsor_decathlon.png" alt="Decathlon" class="max-w-full max-h-full object-contain">
+                        </div>
+                        <div>
+                            <span class="text-[10px] font-bold text-[#00592e] uppercase block">SPORTING GOODS</span>
+                            <h4 class="font-bold text-xl text-slate-900 group-hover:text-[#00592e] transition-colors">Decathlon</h4>
+                            <p class="text-xs text-slate-500">Attrezzature e materiale tecnico</p>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-100 flex justify-between items-center text-xs font-semibold text-slate-600 group-hover:text-[#00592e]">
+                        <span>decathlon.it</span>
+                        <span>↗</span>
+                    </div>
+                </a>
+
+                <!-- Sponsor 5: Banca Sella -->
+                <a href="https://www.sella.it/" target="_blank" rel="noopener noreferrer" class="pro-card p-6 flex flex-col justify-between group hover:border-[#00592e] transition-all bg-white border border-slate-200 rounded-xl shadow-sm">
+                    <div class="flex items-center gap-4">
+                        <div class="w-16 h-16 rounded-lg bg-slate-50 border border-slate-200 p-2 flex items-center justify-center shrink-0">
+                            <img src="assets/img/sponsor_bancasella.png" alt="Banca Sella" class="max-w-full max-h-full object-contain">
+                        </div>
+                        <div>
+                            <span class="text-[10px] font-bold text-[#b45309] uppercase block">BANKING PARTNER</span>
+                            <h4 class="font-bold text-xl text-slate-900 group-hover:text-[#00592e] transition-colors">Banca Sella</h4>
+                            <p class="text-xs text-slate-500">Servizi e pagamenti digitali</p>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-100 flex justify-between items-center text-xs font-semibold text-slate-600 group-hover:text-[#00592e]">
+                        <span>sella.it</span>
+                        <span>↗</span>
+                    </div>
+                </a>
+
+                <!-- Sponsor 6: Enel Energia -->
+                <a href="https://www.enel.it/" target="_blank" rel="noopener noreferrer" class="pro-card p-6 flex flex-col justify-between group hover:border-[#00592e] transition-all bg-white border border-slate-200 rounded-xl shadow-sm">
+                    <div class="flex items-center gap-4">
+                        <div class="w-16 h-16 rounded-lg bg-slate-50 border border-slate-200 p-2 flex items-center justify-center shrink-0">
+                            <img src="assets/img/sponsor_enel.png" alt="Enel Energia" class="max-w-full max-h-full object-contain">
+                        </div>
+                        <div>
+                            <span class="text-[10px] font-bold text-rose-600 uppercase block">ENERGY PARTNER</span>
+                            <h4 class="font-bold text-xl text-slate-900 group-hover:text-[#00592e] transition-colors">Enel Energia</h4>
+                            <p class="text-xs text-slate-500">Energia verde e sostenibilità</p>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-100 flex justify-between items-center text-xs font-semibold text-slate-600 group-hover:text-[#00592e]">
+                        <span>enel.it</span>
+                        <span>↗</span>
+                    </div>
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 9. CONTATTI E SEGRETERIA -->
+    <section id="contatti" class="py-16 px-4 bg-[#f8fafc] border-b border-slate-200">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+            
+            <div class="lg:col-span-5 space-y-4">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-wider text-[#00592e] bg-[#ecfdf5] px-2.5 py-1 rounded">
+                        SEDE E RECAPITI
+                    </span>
+                    <h2 class="font-['Plus_Jakarta_Sans'] font-extrabold text-3xl text-slate-900 mt-2">
+                        Contatta la società
+                    </h2>
+                    <p class="text-slate-600 text-sm mt-1">Per informazioni sulle iscrizioni, partite o collaborazioni societarie.</p>
+                </div>
+
+                <div class="pro-card p-5 space-y-3 text-xs bg-white border border-slate-200 rounded-xl">
+                    <div>
+                        <strong class="text-slate-900 block font-bold text-sm">Sede ufficiale</strong>
+                        <span class="text-slate-600">Via dello Sport 10, 00100 Città dello Sport</span>
+                    </div>
+                    <div class="border-t border-slate-100 pt-2">
+                        <strong class="text-slate-900 block font-bold text-sm">Orari segreteria</strong>
+                        <span class="text-slate-600">Lunedì – venerdì: 15:30 – 19:30</span>
+                    </div>
+                    <div class="border-t border-slate-100 pt-2">
+                        <strong class="text-slate-900 block font-bold text-sm">Email ufficiale</strong>
+                        <span class="text-slate-600">segreteria@usdgialloverdi.it</span>
+                    </div>
+                </div>
+
+                <div class="rounded-lg overflow-hidden border border-slate-200 h-48 shadow-sm">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12613.593679808383!2d14.8210!3d38.0305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1316bdf567e7c8eb%3A0x867eb6d95ad59737!2s98078%20Tortorici%20ME!5e0!3m2!1sit!2sit!4v1700000000000!5m2!1sit!2sit" width="100%" height="100%" style="border:0;" loading="lazy"></iframe>
+                </div>
+            </div>
+
+            <div class="lg:col-span-7">
+                <div class="pro-card p-6 sm:p-8 space-y-4 bg-white border border-slate-200 rounded-xl">
+                    <span class="text-xs font-bold uppercase tracking-wider text-[#00592e] bg-[#ecfdf5] px-2.5 py-1 rounded">
+                        SCRIVICI UN MESSAGGIO
+                    </span>
+                    <h3 class="font-['Plus_Jakarta_Sans'] font-extrabold text-2xl text-slate-900">
+                        Modulo di contatto della segreteria
+                    </h3>
+
+                    <form onsubmit="event.preventDefault(); alert('Messaggio inviato alla segreteria!'); this.reset();" class="space-y-4 text-xs">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block font-semibold text-slate-700 mb-1">Nome e cognome *</label>
+                                <input type="text" required placeholder="Mario Rossi" class="w-full p-2.5 bg-white border border-slate-300 text-slate-900 rounded-md focus:border-[#00592e] focus:outline-none">
+                            </div>
+                            <div>
+                                <label class="block font-semibold text-slate-700 mb-1">Indirizzo email *</label>
+                                <input type="email" required placeholder="mario.rossi@email.it" class="w-full p-2.5 bg-white border border-slate-300 text-slate-900 rounded-md focus:border-[#00592e] focus:outline-none">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block font-semibold text-slate-700 mb-1">Oggetto *</label>
+                            <input type="text" required placeholder="Richiesta informazioni" class="w-full p-2.5 bg-white border border-slate-300 text-slate-900 rounded-md focus:border-[#00592e] focus:outline-none">
+                        </div>
+                        <div>
+                            <label class="block font-semibold text-slate-700 mb-1">Messaggio *</label>
+                            <textarea rows="4" required placeholder="Scrivi qui la tua richiesta..." class="w-full p-2.5 bg-white border border-slate-300 text-slate-900 rounded-md focus:border-[#00592e] focus:outline-none"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-[#00592e] hover:bg-[#004222] text-white font-bold py-3 px-6 rounded-md shadow transition-colors">
+                            Invia il messaggio alla segreteria
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 10. TESSERAMENTO TELEMATICO -->
+    <section id="tesseramento" class="py-16 px-4 bg-white border-b border-slate-200">
+        <div class="max-w-3xl mx-auto pro-card p-6 sm:p-10 border-2 border-[#00592e] space-y-6 bg-white rounded-xl shadow-md">
+            <span class="text-xs font-bold uppercase tracking-wider text-[#00592e] bg-[#ecfdf5] px-2.5 py-1 rounded">
+                TESSERAMENTO 2026-2027
+            </span>
+            <h2 class="font-['Plus_Jakarta_Sans'] font-extrabold text-3xl text-slate-900">
+                Pre-iscrizione telematica al settore giovanile
+            </h2>
+            <p class="text-xs text-slate-500">Compila i campi per inviare la richiesta di tesseramento alla nostra segreteria.</p>
+
+            <form onsubmit="event.preventDefault(); alert('Pre-iscrizione inviata con successo!'); this.reset();" class="space-y-4 text-xs">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block font-semibold text-slate-700 mb-1">Cognome atleta *</label>
+                        <input type="text" required placeholder="Cognome" class="w-full p-2.5 bg-white border border-slate-300 text-slate-900 rounded-md">
+                    </div>
+                    <div>
+                        <label class="block font-semibold text-slate-700 mb-1">Nome atleta *</label>
+                        <input type="text" required placeholder="Nome" class="w-full p-2.5 bg-white border border-slate-300 text-slate-900 rounded-md">
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block font-semibold text-slate-700 mb-1">Data di nascita *</label>
+                        <input type="date" required class="w-full p-2.5 bg-white border border-slate-300 text-slate-900 rounded-md">
+                    </div>
+                    <div>
+                        <label class="block font-semibold text-slate-700 mb-1">Città di residenza</label>
+                        <input type="text" placeholder="Città" class="w-full p-2.5 bg-white border border-slate-300 text-slate-900 rounded-md">
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block font-semibold text-slate-700 mb-1">Genitore / Tutore *</label>
+                        <input type="text" required placeholder="Nome e cognome" class="w-full p-2.5 bg-white border border-slate-300 text-slate-900 rounded-md">
+                    </div>
+                    <div>
+                        <label class="block font-semibold text-slate-700 mb-1">Telefono / WhatsApp *</label>
+                        <input type="tel" required placeholder="333 1234567" class="w-full p-2.5 bg-white border border-slate-300 text-slate-900 rounded-md">
+                    </div>
+                </div>
+                <button type="submit" class="w-full bg-[#00592e] hover:bg-[#004222] text-white font-bold py-3 px-6 rounded-md shadow transition-colors">
+                    Invia la domanda di pre-iscrizione
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- 11. FOOTER -->
+    <footer class="bg-[#004222] text-white/80 py-12 text-xs border-t border-[#003119] text-center space-y-3 px-4">
+        <img src="assets/img/stemma_usd_gialloverdi.png" alt="USD Gialloverdi" class="h-14 w-14 mx-auto object-contain mb-2 drop-shadow">
+        <p class="font-['Plus_Jakarta_Sans'] font-bold text-xl text-white">U.S.D. GIALLOVERDI 1923</p>
+        <p class="text-white/70">Codice fiscale: 90012345678 • Matricola Federale: 998877 • Stadio Comunale Gialloverde</p>
+        <p class="text-[#ffd200] font-semibold">Tema Full Gutenberg Clean Pro • Ispirato alla leggibilità di Norwich City FC ed FC Nantes</p>
+    </footer>
+
+</body>
+</html>

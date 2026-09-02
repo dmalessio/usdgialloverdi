@@ -1,0 +1,159 @@
+/*
+Theme Name: USD Tortorici - Gutenberg Clean Pro (Norwich & Nantes Inspired)
+Theme URI: https://usdtortorici.it
+Author: USD Tortorici
+Author URI: https://usdtortorici.it
+Description: Tema Full Site Editing (FSE) basato su massima leggibilità, font moderni geometrici (Plus Jakarta Sans e Inter) e palette societaria giallo-verde su base chiara, ispirato all'eccellenza visiva di club come Norwich City FC ed FC Nantes.
+Version: 1.0.0
+Requires at least: 6.5
+Tested up to: 6.7
+Requires PHP: 8.0
+License: GNU General Public License v2 or later
+Text Domain: usd-tortorici-pro
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
+
+:root {
+  --wp--preset--color--body-bg: #f8fafc;
+  --wp--preset--color--card-bg: #ffffff;
+  --wp--preset--color--club-green: #00592e;
+  --wp--preset--color--club-green-dark: #004222;
+  --wp--preset--color--club-green-light: #ecfdf5;
+  --wp--preset--color--club-yellow: #ffd200;
+  --wp--preset--color--club-yellow-light: #fffbeb;
+  --wp--preset--color--text-main: #0f172a;
+  --wp--preset--color--text-muted: #475569;
+  --wp--preset--color--border-subtle: #e2e8f0;
+  
+  --wp--preset--shadow--soft: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.04);
+  --wp--preset--shadow--card-modern: 0 4px 6px -1px rgba(0,0,0,0.07), 0 2px 4px -2px rgba(0,0,0,0.05);
+  --wp--preset--shadow--elevated: 0 10px 15px -3px rgba(0,0,0,0.08), 0 4px 6px -4px rgba(0,0,0,0.04);
+  
+  --wp--preset--font-family--jakarta: 'Plus Jakarta Sans', sans-serif;
+  --wp--preset--font-family--inter: 'Inter', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var(--wp--preset--color--body-bg);
+  color: var(--wp--preset--color--text-main);
+  font-family: var(--wp--preset--font-family--inter);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--wp--preset--font-family--jakarta);
+  font-weight: 700;
+  color: var(--wp--preset--color--text-main);
+  letter-spacing: -0.02em;
+}
+
+/* Buttons */
+.wp-block-button__link,
+.wp-element-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--wp--preset--font-family--jakarta);
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.65rem 1.35rem;
+  border-radius: 6px;
+  background-color: var(--wp--preset--color--club-green);
+  color: #ffffff !important;
+  border: 1px solid var(--wp--preset--color--club-green);
+  box-shadow: var(--wp--preset--shadow--soft);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.wp-block-button__link:hover,
+.wp-element-button:hover {
+  background-color: var(--wp--preset--color--club-green-dark) !important;
+  border-color: var(--wp--preset--color--club-green-dark) !important;
+  box-shadow: var(--wp--preset--shadow--card-modern) !important;
+  transform: translateY(-1px);
+}
+
+/* Button Yellow Variant (Canaries Accent) */
+.btn-yellow,
+.wp-block-button.is-style-yellow .wp-block-button__link {
+  background-color: var(--wp--preset--color--club-yellow) !important;
+  color: #004222 !important;
+  border: 1px solid var(--wp--preset--color--club-yellow) !important;
+  font-weight: 700;
+}
+
+.btn-yellow:hover,
+.wp-block-button.is-style-yellow .wp-block-button__link:hover {
+  background-color: #f5c400 !important;
+  color: #000000 !important;
+}
+
+/* Button Outline Variant */
+.wp-block-button.is-style-outline .wp-block-button__link {
+  background-color: #ffffff !important;
+  color: var(--wp--preset--color--club-green) !important;
+  border: 1.5px solid var(--wp--preset--color--club-green) !important;
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link:hover {
+  background-color: var(--wp--preset--color--club-green) !important;
+  color: #ffffff !important;
+}
+
+/* White Card Modern */
+.pro-card {
+  background-color: #ffffff;
+  border: 1px solid var(--wp--preset--color--border-subtle);
+  border-radius: 10px;
+  box-shadow: var(--wp--preset--shadow--card-modern);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.pro-card:hover {
+  box-shadow: var(--wp--preset--shadow--elevated);
+  border-color: #cbd5e1;
+}
+
+/* Accordion / Details */
+details.wp-block-details {
+  border: 1px solid var(--wp--preset--color--border-subtle);
+  border-radius: 6px;
+  background-color: #f8fafc;
+  padding: 0.5rem 0.75rem;
+  transition: background-color 0.2s ease;
+}
+
+details.wp-block-details summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--wp--preset--color--club-green);
+  font-family: var(--wp--preset--font-family--jakarta);
+  font-size: 0.825rem;
+  padding: 2px 0;
+  outline: none;
+  user-select: none;
+}
+
+details.wp-block-details summary:hover {
+  color: var(--wp--preset--color--club-green-dark);
+}
+
+details.wp-block-details[open] {
+  background-color: #ffffff;
+}
+
+details.wp-block-details[open] summary {
+  border-bottom: 1px solid var(--wp--preset--color--border-subtle);
+  margin-bottom: 6px;
+  padding-bottom: 6px;
+}
