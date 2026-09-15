@@ -823,6 +823,8 @@
     <!-- SEZIONE CAMPAGNA ABBONAMENTI 2026-2027 (wp:group) -->
     <!-- 7. CAMPAGNA ABBONAMENTI 2026/2027 (wp:group) -->
     <!-- wp:group {"metadata":{"name":"Campagna Abbonamenti 2026/2027"},"align":"full"} -->
+    <!-- 7. CAMPAGNA ABBONAMENTI 2026/2027 (wp:group) -->
+    <!-- wp:group {"metadata":{"name":"Campagna Abbonamenti 2026/2027"},"align":"full"} -->
     <section id="abbonamenti" class="py-10 sm:py-12 px-4 bg-gradient-to-b from-[#f8fafc] to-[#f1f5f9] border-b border-slate-200">
         <div class="max-w-7xl mx-auto space-y-6 sm:space-y-8">
             
@@ -842,77 +844,85 @@
                 </span>
             </div>
 
-            <!-- Griglia a 2 Colonne: Sinistra Tessera • Destra Costi & Modulo -->
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            <!-- Griglia Bilanciata 50/50 a Pari Altezza (items-stretch) -->
+            <!-- wp:columns -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
                 
-                <!-- COLONNA SINISTRA: Card Grafica Tessera Ufficiale (lg:col-span-5) -->
+                <!-- COLONNA SINISTRA: Card Grafica Tessera Ufficiale (50%) -->
                 <!-- wp:column -->
-                <div class="lg:col-span-5 space-y-4">
-                    <div class="pro-card p-5 bg-white border-2 border-[#00592e] rounded-2xl shadow-lg relative overflow-hidden">
-                        <div class="flex items-center justify-between mb-3">
-                            <span class="text-[11px] font-bold uppercase tracking-wider text-[#00592e] bg-[#ecfdf5] px-2.5 py-0.5 rounded">
-                                TESSERA UFFICIALE 2026/27
-                            </span>
-                            <span class="text-[11px] font-extrabold text-amber-600 bg-amber-50 px-2 py-0.5 rounded">
-                                11 Gare Interne
-                            </span>
-                        </div>
-                        
-                        <!-- wp:image {"aspectRatio":"16/9","scale":"cover","sizeSlug":"large","linkDestination":"none","lightbox":{"enabled":true}} -->
-                        <figure class="wp-block-image size-large relative overflow-hidden rounded-xl border border-slate-200 bg-slate-100 shadow-sm group">
-                            <img src="assets/img/abbonamento_gialloverdi_2026_2027.jpg" alt="Tessera Abbonamento Stagionale USD Gialloverdi 2026-2027 - Come prima piu di prima ti amero" class="w-full h-auto object-cover group-hover:scale-102 transition-transform duration-300 cursor-pointer"/>
-                            <div class="absolute bottom-2 right-2 bg-black/70 backdrop-blur-sm text-white text-[10px] font-medium px-2 py-1 rounded">
-                                🔍 Ingrandisci tessera
+                <div class="wp-block-column h-full">
+                    <div class="pro-card p-6 sm:p-7 bg-white border-2 border-[#00592e] rounded-2xl shadow-md h-full flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-3.5">
+                                <span class="text-[11px] font-bold uppercase tracking-wider text-[#00592e] bg-[#ecfdf5] px-2.5 py-0.5 rounded">
+                                    TESSERA UFFICIALE 2026/27
+                                </span>
+                                <span class="text-[11px] font-extrabold text-amber-700 bg-amber-50 border border-amber-200 px-2.5 py-0.5 rounded-full">
+                                    11 Gare Interne
+                                </span>
                             </div>
-                        </figure>
-                        <!-- /wp:image -->
+                            
+                            <!-- wp:image {"aspectRatio":"16/9","scale":"cover","sizeSlug":"large","linkDestination":"none","lightbox":{"enabled":true}} -->
+                            <figure class="wp-block-image size-large relative overflow-hidden rounded-xl border border-slate-200 bg-slate-100 shadow-sm group">
+                                <img src="assets/img/abbonamento_gialloverdi_2026_2027.jpg" alt="Tessera Abbonamento Stagionale USD Gialloverdi 2026-2027" class="w-full h-auto object-cover group-hover:scale-102 transition-transform duration-300 cursor-pointer"/>
+                                <div class="absolute bottom-2 right-2 bg-black/75 backdrop-blur-sm text-[#ffd200] text-[10px] font-bold px-2 py-1 rounded shadow">
+                                    🔍 Ingrandisci tessera
+                                </div>
+                            </figure>
+                            <!-- /wp:image -->
 
-                        <div class="mt-4 pt-3 border-t border-slate-100 text-xs text-slate-600 space-y-2.5">
-                            <div class="flex items-center gap-2">
-                                <span class="text-[#00592e] font-bold text-sm">✓</span>
-                                <span>Tessera personale plastificata con 11 caselle timbro gara per ogni turno</span>
+                            <div class="mt-4 pt-3 border-t border-slate-100 text-xs text-slate-600 space-y-2.5">
+                                <div class="flex items-center gap-2.5">
+                                    <span class="w-5 h-5 rounded-full bg-[#ecfdf5] text-[#00592e] flex items-center justify-center font-bold text-xs shrink-0">✓</span>
+                                    <span>Tessera personale plastificata con 11 caselle timbro per ogni turno casalingo</span>
+                                </div>
+                                <div class="flex items-center gap-2.5">
+                                    <span class="w-5 h-5 rounded-full bg-[#ecfdf5] text-[#00592e] flex items-center justify-center font-bold text-xs shrink-0">✓</span>
+                                    <span>Ritiro immediato presso la segreteria societaria o al botteghino dello stadio</span>
+                                </div>
+                                <div class="flex items-center gap-2.5">
+                                    <span class="w-5 h-5 rounded-full bg-[#ecfdf5] text-[#00592e] flex items-center justify-center font-bold text-xs shrink-0">✓</span>
+                                    <span>Valido per tutte le partite casalinghe di Prima Categoria Girone C</span>
+                                </div>
                             </div>
-                            <div class="flex items-center gap-2">
-                                <span class="text-[#00592e] font-bold text-sm">✓</span>
-                                <span>Ritiro immediato presso la segreteria o al botteghino dello stadio</span>
-                            </div>
-                            <div class="flex items-center gap-2">
-                                <span class="text-[#00592e] font-bold text-sm">✓</span>
-                                <span>Validità per l'intero campionato di Prima Categoria Girone C</span>
-                            </div>
+                        </div>
+
+                        <div class="mt-5 pt-3.5 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+                            <span class="font-medium">U.S.D. Gialloverdi • Stagione 2026/27</span>
+                            <span class="text-[#00592e] font-bold">Stadio Comunale</span>
                         </div>
                     </div>
                 </div>
                 <!-- /wp:column -->
 
-                <!-- COLONNA DESTRA: 2 Tier (Base & Con Sciarpa) + Modulo Online (lg:col-span-7) -->
+                <!-- COLONNA DESTRA: 2 Tier + Modulo Online (50%) -->
                 <!-- wp:column -->
-                <div class="lg:col-span-7 space-y-6">
+                <div class="wp-block-column h-full flex flex-col justify-between space-y-4">
                     
-                    <!-- 2 Piani Tariffari (Base & Con Sciarpa) -->
+                    <!-- 2 Piani Tariffari Pari Dimensioni -->
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         
                         <!-- Tier 1: Abbonamento Base -->
-                        <div class="pro-card p-5 bg-white border border-slate-200 hover:border-[#00592e] rounded-xl shadow-sm flex flex-col justify-between transition-all">
+                        <div class="pro-card p-4 sm:p-5 bg-white border border-slate-200 hover:border-[#00592e] rounded-xl shadow-sm flex flex-col justify-between transition-all">
                             <div>
                                 <span class="text-[10px] font-bold uppercase text-slate-500 block">ABBONAMENTO BASE</span>
                                 <div class="mt-1 flex items-baseline gap-1">
                                     <span class="text-3xl font-extrabold text-slate-900">€ 30</span>
                                     <span class="text-[11px] text-slate-500">/ anno</span>
                                 </div>
-                                <p class="text-[11px] text-slate-600 mt-2 leading-relaxed">
-                                    Accesso a tutte le 11 gare interne di campionato nel settore Tribuna dello Stadio Comunale.
+                                <p class="text-[11px] text-slate-600 mt-1.5 leading-relaxed">
+                                    Accesso a tutte le 11 gare interne nel settore Tribuna.
                                 </p>
                             </div>
-                            <span class="mt-4 text-[11px] font-bold text-[#00592e] bg-[#ecfdf5] py-1.5 px-2.5 rounded text-center block border border-[#a7f3d0]">
-                                Circa € 2,70 a partita
+                            <span class="mt-3 text-[10px] font-bold text-[#00592e] bg-[#ecfdf5] py-1 px-2 rounded text-center block border border-[#a7f3d0]">
+                                Circa € 2,70 a gara
                             </span>
                         </div>
 
                         <!-- Tier 2: Sostenitore Gold + Sciarpa (In Evidenza) -->
-                        <div class="pro-card p-5 bg-white border-2 border-[#ffd200] rounded-xl shadow-md flex flex-col justify-between relative overflow-hidden bg-gradient-to-b from-[#fffbeb] to-white">
-                            <div class="absolute top-0 right-0 bg-[#ffd200] text-[#004222] font-black text-[9px] px-2.5 py-0.5 rounded-bl uppercase tracking-wider">
-                                ★ CON SCIARPA INCLUSA ★
+                        <div class="pro-card p-4 sm:p-5 bg-white border-2 border-[#ffd200] rounded-xl shadow-md flex flex-col justify-between relative overflow-hidden bg-gradient-to-b from-[#fffbeb] to-white">
+                            <div class="absolute top-0 right-0 bg-[#ffd200] text-[#004222] font-black text-[9px] px-2 py-0.5 rounded-bl uppercase tracking-wider">
+                                ★ CON SCIARPA ★
                             </div>
                             <div>
                                 <span class="text-[10px] font-bold uppercase text-[#00592e] block">SOSTENITORE GOLD</span>
@@ -920,62 +930,62 @@
                                     <span class="text-3xl font-extrabold text-[#00592e]">€ 50</span>
                                     <span class="text-[11px] text-slate-500">/ anno</span>
                                 </div>
-                                <p class="text-[11px] text-slate-700 mt-2 leading-relaxed font-medium">
-                                    11 Gare di campionato + <strong>Sciarpa Ufficiale Jacquard in Omaggio</strong> + posto riservato in tribuna.
+                                <p class="text-[11px] text-slate-700 mt-1.5 leading-relaxed font-medium">
+                                    11 Gare + <strong>Sciarpa Ufficiale in Omaggio</strong> + tribuna.
                                 </p>
                             </div>
-                            <span class="mt-4 text-[11px] font-bold text-white bg-[#00592e] py-1.5 px-2.5 rounded text-center block shadow-sm">
-                                Gadget Sciarpa Club Incluso
+                            <span class="mt-3 text-[10px] font-bold text-white bg-[#00592e] py-1 px-2 rounded text-center block shadow-sm">
+                                Gadget Sciarpa Incluso
                             </span>
                         </div>
 
                     </div>
 
                     <!-- Modulo Richiesta Rapida Tessera -->
-                    <div id="modulo-abbonamento" class="pro-card p-6 bg-white border border-slate-200 rounded-2xl shadow-sm space-y-4">
-                        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-1 border-b border-slate-100 pb-3">
+                    <div id="modulo-abbonamento" class="pro-card p-5 sm:p-6 bg-white border border-slate-200 rounded-2xl shadow-sm space-y-3.5 flex-1 flex flex-col justify-between">
+                        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-1 border-b border-slate-100 pb-2.5">
                             <div>
                                 <h4 class="font-bold text-base text-slate-900">Richiedi la tua tessera online</h4>
-                                <p class="text-xs text-slate-500">Compila i campi: la segreteria preparerà il tuo abbonamento nominale.</p>
+                                <p class="text-[11px] text-slate-500">Compila i campi: la segreteria preparerà il tuo abbonamento nominale.</p>
                             </div>
-                            <span class="text-xs font-semibold text-[#00592e] bg-[#ecfdf5] px-2.5 py-1 rounded">Ritiro immediato</span>
+                            <span class="text-[11px] font-semibold text-[#00592e] bg-[#ecfdf5] px-2 py-0.5 rounded">Ritiro immediato</span>
                         </div>
 
-                        <form onsubmit="event.preventDefault(); alert('Richiesta abbonamento ricevuta! La segreteria ti contatterà per il ritiro della tessera.'); this.reset();" class="space-y-4 text-xs">
-                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <form onsubmit="event.preventDefault(); alert('Richiesta abbonamento ricevuta! La segreteria ti contatterà per il ritiro della tessera.'); this.reset();" class="space-y-3 text-xs">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
                                 <div>
-                                    <label class="block font-semibold text-slate-700 mb-1">Nome e Cognome *</label>
-                                    <input type="text" required placeholder="Mario Rossi" class="w-full p-2.5 bg-white border border-slate-300 text-slate-900 rounded-lg focus:ring-2 focus:ring-[#00592e] focus:border-[#00592e] outline-none">
+                                    <label class="block font-semibold text-slate-700 mb-1 text-[11px]">Nome e Cognome *</label>
+                                    <input type="text" required placeholder="Mario Rossi" class="w-full p-2 bg-white border border-slate-300 text-slate-900 rounded-lg focus:ring-2 focus:ring-[#00592e] focus:border-[#00592e] outline-none">
                                 </div>
                                 <div>
-                                    <label class="block font-semibold text-slate-700 mb-1">Recapito Telefonico / WhatsApp *</label>
-                                    <input type="tel" required placeholder="333 1234567" class="w-full p-2.5 bg-white border border-slate-300 text-slate-900 rounded-lg focus:ring-2 focus:ring-[#00592e] focus:border-[#00592e] outline-none">
+                                    <label class="block font-semibold text-slate-700 mb-1 text-[11px]">Recapito Telefonico / WhatsApp *</label>
+                                    <input type="tel" required placeholder="333 1234567" class="w-full p-2 bg-white border border-slate-300 text-slate-900 rounded-lg focus:ring-2 focus:ring-[#00592e] focus:border-[#00592e] outline-none">
                                 </div>
                             </div>
-                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
                                 <div>
-                                    <label class="block font-semibold text-slate-700 mb-1">Tipologia Tessera *</label>
-                                    <select required class="w-full p-2.5 bg-white border border-slate-300 text-slate-900 rounded-lg focus:ring-2 focus:ring-[#00592e] focus:border-[#00592e] outline-none font-medium">
+                                    <label class="block font-semibold text-slate-700 mb-1 text-[11px]">Tipologia Tessera *</label>
+                                    <select required class="w-full p-2 bg-white border border-slate-300 text-slate-900 rounded-lg focus:ring-2 focus:ring-[#00592e] focus:border-[#00592e] outline-none font-medium text-xs">
                                         <option value="base">Abbonamento Base (€ 30)</option>
-                                        <option value="sostenitore" selected>Sostenitore Gold + Sciarpa Ufficiale (€ 50)</option>
+                                        <option value="sostenitore" selected>Sostenitore Gold + Sciarpa (€ 50)</option>
                                     </select>
                                 </div>
                                 <div>
-                                    <label class="block font-semibold text-slate-700 mb-1">Modalità di Ritiro *</label>
-                                    <select required class="w-full p-2.5 bg-white border border-slate-300 text-slate-900 rounded-lg focus:ring-2 focus:ring-[#00592e] focus:border-[#00592e] outline-none">
-                                        <option value="botteghino">Ritiro al botteghino dello stadio (giorno gara)</option>
-                                        <option value="sede">Ritiro presso sede della segreteria</option>
-                                        <option value="domicilio">Consegna a domicilio concordata</option>
+                                    <label class="block font-semibold text-slate-700 mb-1 text-[11px]">Modalità di Ritiro *</label>
+                                    <select required class="w-full p-2 bg-white border border-slate-300 text-slate-900 rounded-lg focus:ring-2 focus:ring-[#00592e] focus:border-[#00592e] outline-none text-xs">
+                                        <option value="botteghino">Ritiro al botteghino (giorno gara)</option>
+                                        <option value="sede">Ritiro presso sede sociale</option>
+                                        <option value="domicilio">Consegna concordata</option>
                                     </select>
                                 </div>
                             </div>
-                            <div class="flex flex-col sm:flex-row items-center gap-3 pt-2">
-                                <button type="submit" class="w-full sm:w-auto flex-1 bg-[#00592e] hover:bg-[#004222] text-white font-bold py-3 px-6 rounded-lg shadow transition-colors text-center">
-                                    Prenota Abbonamento Stagionale 2026/27 →
+                            <div class="flex flex-col sm:flex-row items-center gap-2.5 pt-1">
+                                <button type="submit" class="w-full sm:w-auto flex-1 bg-[#00592e] hover:bg-[#004222] text-white font-bold py-2.5 px-4 rounded-lg shadow transition-colors text-center text-xs">
+                                    Prenota Abbonamento 2026/27 →
                                 </button>
-                                <a href="https://wa.me/393331234567?text=Vorrei%20informazioni%20sull%27abbonamento%20USD%20Gialloverdi" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1ebd5a] text-white font-bold py-3 px-5 rounded-lg shadow transition-colors">
-                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.074-2.029-.475-1.428-.588-2.346-2.047-2.417-2.143-.07-.096-.575-.765-.575-1.46 0-.694.364-1.036.494-1.179.13-.143.285-.179.38-.179.096 0 .191.001.274.005.088.004.205-.033.321.246.12.29.412 1.005.448 1.08.036.074.06.16.012.256-.048.096-.072.155-.143.24-.072.083-.153.185-.218.25-.072.072-.147.151-.063.296.084.144.375.62.805 1.003.555.494 1.023.647 1.168.719.144.072.228.06.312-.036.084-.096.36-419.456-.563.096-.144.192-.12.324-.072.132.048.837.395.981.467.144.072.24.108.276.168.036.06.036.348-.108.753z"/></svg>
-                                    <span>Prenota su WhatsApp</span>
+                                <a href="https://wa.me/393331234567?text=Vorrei%20informazioni%20sull%27abbonamento%20USD%20Gialloverdi" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-1.5 bg-[#25D366] hover:bg-[#1ebd5a] text-white font-bold py-2.5 px-3.5 rounded-lg shadow transition-colors text-xs">
+                                    <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.074-2.029-.475-1.428-.588-2.346-2.047-2.417-2.143-.07-.096-.575-.765-.575-1.46 0-.694.364-1.036.494-1.179.13-.143.285-.179.38-.179.096 0 .191.001.274.005.088.004.205-.033.321.246.12.29.412 1.005.448 1.08.036.074.06.16.012.256-.048.096-.072.155-.143.24-.072.083-.153.185-.218.25-.072.072-.147.151-.063.296.084.144.375.62.805 1.003.555.494 1.023.647 1.168.719.144.072.228.06.312-.036.084-.096.36-419.456-.563.096-.144.192-.12.324-.072.132.048.837.395.981.467.144.072.24.108.276.168.036.06.036.348-.108.753z"/></svg>
+                                    <span>WhatsApp</span>
                                 </a>
                             </div>
                         </form>
@@ -985,9 +995,11 @@
                 <!-- /wp:column -->
 
             </div>
+            <!-- /wp:columns -->
 
         </div>
     </section>
+    <!-- /wp:group -->
     <!-- /wp:group -->
     <!-- /wp:group -->
 
@@ -1374,77 +1386,119 @@
     </section>
 
     <!-- 12. CONTATTI E SEGRETERIA -->
+    <!-- 12. CONTATTI E SEGRETERIA (wp:group) -->
+    <!-- wp:group {"metadata":{"name":"Contatti e Segreteria"},"align":"full"} -->
     <section id="contatti" class="py-10 sm:py-12 px-4 bg-white border-b border-slate-200">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+        <div class="max-w-7xl mx-auto space-y-6 sm:space-y-8">
             
-            <div class="lg:col-span-5 space-y-4">
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-3 pb-4 border-b border-slate-200">
                 <div>
                     <span class="text-xs font-bold uppercase tracking-wider text-[#00592e] bg-[#ecfdf5] px-2.5 py-1 rounded">
                         SEDE E RECAPITI
                     </span>
-                    <h2 class="font-['Plus_Jakarta_Sans'] font-extrabold text-3xl text-slate-900 mt-2">
-                        Contatta la società
+                    <h2 class="font-['Plus_Jakarta_Sans'] font-black text-3xl sm:text-4xl text-slate-900 mt-2">
+                        Contatta la Società
                     </h2>
-                    <p class="text-slate-600 text-sm mt-1">Per informazioni sulle iscrizioni, partite o collaborazioni societarie.</p>
+                    <p class="text-xs text-slate-500 mt-1">Per informazioni sulle iscrizioni, partite o collaborazioni societarie.</p>
                 </div>
-
-                <div class="pro-card p-5 space-y-3 text-xs bg-white border border-slate-200 rounded-xl">
-                    <div>
-                        <strong class="text-slate-900 block font-bold text-sm">Sede ufficiale</strong>
-                        <span class="text-slate-600">Via dello Sport 10, 00100 Città dello Sport</span>
-                    </div>
-                    <div class="border-t border-slate-100 pt-2">
-                        <strong class="text-slate-900 block font-bold text-sm">Orari segreteria</strong>
-                        <span class="text-slate-600">Lunedì – venerdì: 15:30 – 19:30</span>
-                    </div>
-                    <div class="border-t border-slate-100 pt-2">
-                        <strong class="text-slate-900 block font-bold text-sm">Email ufficiale</strong>
-                        <span class="text-slate-600">segreteria@usdgialloverdi.it</span>
-                    </div>
-                </div>
-
-                <div class="rounded-lg overflow-hidden border border-slate-200 h-48 shadow-sm">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12613.593679808383!2d14.8210!3d38.0305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1316bdf567e7c8eb%3A0x867eb6d95ad59737!2s98078%20Tortorici%20ME!5e0!3m2!1sit!2sit!4v1700000000000!5m2!1sit!2sit" width="100%" height="100%" style="border:0;" loading="lazy"></iframe>
-                </div>
+                <span class="text-xs font-bold text-[#00592e] bg-white px-3.5 py-2 rounded-lg border border-slate-200 shadow-sm shrink-0">
+                    Segreteria Ufficiale
+                </span>
             </div>
 
-            <div class="lg:col-span-7">
-                <div class="pro-card p-6 sm:p-8 space-y-4 bg-white border border-slate-200 rounded-xl">
-                    <span class="text-xs font-bold uppercase tracking-wider text-[#00592e] bg-[#ecfdf5] px-2.5 py-1 rounded">
-                        SCRIVICI UN MESSAGGIO
-                    </span>
-                    <h3 class="font-['Plus_Jakarta_Sans'] font-extrabold text-2xl text-slate-900">
-                        Modulo di contatto della segreteria
-                    </h3>
+            <!-- Griglia Bilanciata 50/50 a Pari Altezza (items-stretch) -->
+            <!-- wp:columns -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+                
+                <!-- COLONNA SINISTRA: Recapiti & Mappa (50%) -->
+                <!-- wp:column -->
+                <div class="wp-block-column h-full">
+                    <div class="pro-card p-6 sm:p-7 bg-white border border-slate-200 rounded-2xl shadow-sm h-full flex flex-col justify-between space-y-5">
+                        <div class="space-y-4">
+                            <div>
+                                <span class="text-[11px] font-bold uppercase tracking-wider text-[#00592e] bg-[#ecfdf5] px-2.5 py-0.5 rounded">
+                                    INFORMAZIONI UTILI
+                                </span>
+                                <h3 class="font-['Plus_Jakarta_Sans'] font-bold text-xl text-slate-900 mt-2">
+                                    Sede Sociale e Stadio
+                                </h3>
+                            </div>
 
-                    <form onsubmit="event.preventDefault(); alert('Messaggio inviato alla segreteria!'); this.reset();" class="space-y-4 text-xs">
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                            <div>
-                                <label class="block font-semibold text-slate-700 mb-1">Nome e cognome *</label>
-                                <input type="text" required placeholder="Mario Rossi" class="w-full p-2.5 bg-white border border-slate-300 text-slate-900 rounded-md focus:border-[#00592e] focus:outline-none">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+                                <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-200">
+                                    <strong class="text-slate-900 block font-bold text-xs mb-0.5">Sede Ufficiale</strong>
+                                    <span class="text-slate-600 text-[11px]">Via dello Sport 10, 00100 Città dello Sport</span>
+                                </div>
+                                <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-200">
+                                    <strong class="text-slate-900 block font-bold text-xs mb-0.5">Orari Segreteria</strong>
+                                    <span class="text-slate-600 text-[11px]">Lunedì – Venerdì: 15:30 – 19:30</span>
+                                </div>
+                                <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-200">
+                                    <strong class="text-slate-900 block font-bold text-xs mb-0.5">Email Ufficiale</strong>
+                                    <span class="text-slate-600 text-[11px]">segreteria@usdgialloverdi.it</span>
+                                </div>
+                                <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-200">
+                                    <strong class="text-slate-900 block font-bold text-xs mb-0.5">Telefono & WhatsApp</strong>
+                                    <span class="text-slate-600 text-[11px]">+39 333 1234567</span>
+                                </div>
                             </div>
-                            <div>
-                                <label class="block font-semibold text-slate-700 mb-1">Indirizzo email *</label>
-                                <input type="email" required placeholder="mario.rossi@email.it" class="w-full p-2.5 bg-white border border-slate-300 text-slate-900 rounded-md focus:border-[#00592e] focus:outline-none">
-                            </div>
                         </div>
-                        <div>
-                            <label class="block font-semibold text-slate-700 mb-1">Oggetto *</label>
-                            <input type="text" required placeholder="Richiesta informazioni" class="w-full p-2.5 bg-white border border-slate-300 text-slate-900 rounded-md focus:border-[#00592e] focus:outline-none">
+
+                        <!-- Mappa con altezza flessibile per allineamento perfetto -->
+                        <div class="rounded-xl overflow-hidden border border-slate-200 min-h-[190px] flex-1 shadow-sm mt-2">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12613.593679808383!2d14.8210!3d38.0305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1316bdf567e7c8eb%3A0x867eb6d95ad59737!2s98078%20Tortorici%20ME!5e0!3m2!1sit!2sit!4v1700000000000!5m2!1sit!2sit" width="100%" height="100%" style="border:0; min-height:190px;" loading="lazy"></iframe>
                         </div>
-                        <div>
-                            <label class="block font-semibold text-slate-700 mb-1">Messaggio *</label>
-                            <textarea rows="4" required placeholder="Scrivi qui la tua richiesta..." class="w-full p-2.5 bg-white border border-slate-300 text-slate-900 rounded-md focus:border-[#00592e] focus:outline-none"></textarea>
-                        </div>
-                        <button type="submit" class="w-full bg-[#00592e] hover:bg-[#004222] text-white font-bold py-3 px-6 rounded-md shadow transition-colors">
-                            Invia il messaggio alla segreteria
-                        </button>
-                    </form>
+                    </div>
                 </div>
+                <!-- /wp:column -->
+
+                <!-- COLONNA DESTRA: Modulo di Contatto (50%) -->
+                <!-- wp:column -->
+                <div class="wp-block-column h-full">
+                    <div class="pro-card p-6 sm:p-7 bg-white border border-slate-200 rounded-2xl shadow-sm h-full flex flex-col justify-between space-y-4">
+                        <div>
+                            <span class="text-[11px] font-bold uppercase tracking-wider text-[#00592e] bg-[#ecfdf5] px-2.5 py-0.5 rounded">
+                                SCRIVICI UN MESSAGGIO
+                            </span>
+                            <h3 class="font-['Plus_Jakarta_Sans'] font-bold text-xl text-slate-900 mt-2">
+                                Modulo di Contatto della Segreteria
+                            </h3>
+                            <p class="text-xs text-slate-500 mt-1">Riceverai risposta entro 24 ore lavorative dal nostro staff.</p>
+                        </div>
+
+                        <form onsubmit="event.preventDefault(); alert('Messaggio inviato alla segreteria! Ti risponderemo a breve.'); this.reset();" class="space-y-3.5 text-xs flex-1 flex flex-col justify-between">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                <div>
+                                    <label class="block font-semibold text-slate-700 mb-1 text-[11px]">Nome e cognome *</label>
+                                    <input type="text" required placeholder="Mario Rossi" class="w-full p-2.5 bg-white border border-slate-300 text-slate-900 rounded-lg focus:ring-2 focus:ring-[#00592e] focus:border-[#00592e] outline-none">
+                                </div>
+                                <div>
+                                    <label class="block font-semibold text-slate-700 mb-1 text-[11px]">Indirizzo email *</label>
+                                    <input type="email" required placeholder="mario.rossi@email.it" class="w-full p-2.5 bg-white border border-slate-300 text-slate-900 rounded-lg focus:ring-2 focus:ring-[#00592e] focus:border-[#00592e] outline-none">
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block font-semibold text-slate-700 mb-1 text-[11px]">Oggetto della richiesta *</label>
+                                <input type="text" required placeholder="Es. Informazioni iscrizioni o tesseramenti" class="w-full p-2.5 bg-white border border-slate-300 text-slate-900 rounded-lg focus:ring-2 focus:ring-[#00592e] focus:border-[#00592e] outline-none">
+                            </div>
+                            <div class="flex-1 flex flex-col">
+                                <label class="block font-semibold text-slate-700 mb-1 text-[11px]">Messaggio *</label>
+                                <textarea rows="4" required placeholder="Scrivi qui la tua richiesta..." class="w-full p-2.5 bg-white border border-slate-300 text-slate-900 rounded-lg focus:ring-2 focus:ring-[#00592e] focus:border-[#00592e] outline-none flex-1 min-h-[90px]"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-[#00592e] hover:bg-[#004222] text-white font-bold py-3 px-6 rounded-xl shadow transition-colors text-xs">
+                                Invia Messaggio alla Segreteria →
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <!-- /wp:column -->
+
             </div>
+            <!-- /wp:columns -->
 
         </div>
     </section>
+    <!-- /wp:group -->
 
     <!-- 13. TESSERAMENTO TELEMATICO -->
     <section id="tesseramento" class="py-10 sm:py-12 px-4 bg-[#f8fafc] border-b border-slate-200">
