@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>U.S.D. Gialloverdi | Sito Ufficiale</title>
-    <meta name="description" content="Portale ufficiale dell'U.S.D. Gialloverdi realizzato al 100% in blocchi standard Gutenberg con la massima leggibilità e stile europeo ispirato a Norwich City ed FC Nantes.">
+    <meta name="description" content="Portale ufficiale dell'U.S.D. Gialloverdi - Campionato di Prima Categoria Girone C - News, rosa, abbonamenti e scuola calcio.">
     <link rel="icon" type="image/png" href="assets/img/stemma_usd_gialloverdi.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,16 +20,18 @@
         <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-3">
             <div class="flex items-center gap-3 flex-wrap">
                 <span class="inline-flex items-center bg-[#ffd200] text-[#004222] px-2.5 py-0.5 rounded font-bold text-xs uppercase tracking-wider">
-                    CALCIO DILETTANTISTICO
+                    FIGC • LND SICILIA
                 </span>
-                <span class="font-bold">U.S.D. GIALLOVERDI • CAMPIONATO REGIONALE</span>
+                <span class="font-bold">U.S.D. GIALLOVERDI • PRIMA CATEGORIA GIRONE C</span>
                 <span class="text-white/40 hidden md:inline">|</span>
-                <span class="text-white/80 hidden md:inline">Matricola Federale: <strong class="text-[#ffd200]">998877</strong></span>
+                <span class="text-white/80 hidden md:inline">Matricola FIGC: <strong class="text-[#ffd200]">944319</strong></span>
             </div>
             <div class="flex items-center gap-4 text-xs text-white/90">
                 <span>Stagione 2026-2027</span>
                 <span>•</span>
-                <a href="merchandising.html" class="text-[#ffd200] hover:text-white font-bold transition-colors">Store Ufficiale</a>
+                <a href="#abbonamenti" class="text-[#ffd200] hover:text-white font-bold transition-colors">Campagna Abbonamenti</a>
+                <span>•</span>
+                <a href="merchandising.html" class="text-white/80 hover:text-white font-bold transition-colors">Store</a>
             </div>
         </div>
     </div>
@@ -40,7 +42,7 @@
     <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 px-4 py-3.5 shadow-sm">
         <div class="max-w-7xl mx-auto flex items-center justify-between gap-6">
             
-            <a href="#home" class="flex items-center gap-3.5 group text-decoration-none">
+            <a href="#home" class="flex items-center gap-3.5 group text-decoration-none shrink-0">
                 <div class="h-12 w-12 flex items-center justify-center shrink-0">
                     <img src="assets/img/stemma_usd_gialloverdi.png" alt="Stemma U.S.D. Gialloverdi" class="w-full h-full object-contain drop-shadow">
                 </div>
@@ -49,26 +51,29 @@
                         U.S.D. GIALLOVERDI
                     </span>
                     <span class="text-[10px] text-[#00592e] uppercase font-bold tracking-wider block">
-                        Fondata nel 1923 • Calcio e Territorio
+                        Fondata nel 1950 • Prima Categoria Gir. C
                     </span>
                 </div>
             </a>
 
-            <!-- Menu Gutenberg -->
-            <nav class="hidden lg:flex items-center gap-6 font-['Plus_Jakarta_Sans'] font-semibold text-sm text-slate-700">
+            <!-- Menu Gutenberg Riorganizzato (Pulito e non caotico) -->
+            <nav class="hidden lg:flex items-center gap-5 xl:gap-6 font-['Plus_Jakarta_Sans'] font-semibold text-sm text-slate-700">
                 <a href="#comunicati" class="hover:text-[#00592e] transition-colors">Notizie</a>
                 <a href="#prima-squadra" class="hover:text-[#00592e] transition-colors">Prima Squadra</a>
-                <a href="#staff" class="hover:text-[#00592e] transition-colors">Staff & Club</a>
+                <a href="#staff" class="hover:text-[#00592e] transition-colors">Staff</a>
+                <a href="#abbonamenti" class="inline-flex items-center gap-1.5 text-[#00592e] font-bold hover:text-[#004222] transition-colors">
+                    Abbonamenti
+                    <span class="bg-[#ffd200] text-[#004222] text-[10px] font-black px-1.5 py-0.5 rounded leading-none">26/27</span>
+                </a>
                 <a href="#scuola-calcio" class="hover:text-[#00592e] transition-colors">Scuola Calcio</a>
-                <a href="#documenti" class="hover:text-[#00592e] transition-colors">Modulistica</a>
-                <a href="merchandising.html" class="text-[#00592e] font-bold hover:text-[#004222] transition-colors">Merch</a>
-                <a href="#sponsor" class="hover:text-[#00592e] transition-colors">Partner</a>
+                <a href="#supporta" class="hover:text-[#00592e] transition-colors">Sostieni</a>
+                <a href="#sponsor" class="hover:text-[#00592e] transition-colors">Sponsor</a>
                 <a href="#contatti" class="hover:text-[#00592e] transition-colors">Contatti</a>
             </nav>
 
             <div class="shrink-0">
-                <a href="#tesseramento" class="wp-element-button bg-[#00592e] hover:bg-[#004222] text-white text-xs sm:text-sm font-semibold px-4 py-2 rounded-md shadow-sm transition-all">
-                    Tesseramento 2026-2027
+                <a href="#abbonamenti" class="wp-element-button bg-[#00592e] hover:bg-[#004222] text-white text-xs sm:text-sm font-semibold px-4 py-2 rounded-md shadow-sm transition-all">
+                    Abbonati Ora →
                 </a>
             </div>
 
@@ -102,8 +107,8 @@
                 </p>
 
                 <div class="flex flex-wrap gap-3 pt-2">
-                    <a href="#tesseramento" class="bg-[#ffd200] hover:bg-[#f5c400] text-[#004222] font-bold text-sm px-6 py-3 rounded-md shadow transition-all">
-                        Iscrizioni Scuola Calcio →
+                    <a href="#abbonamenti" class="bg-[#ffd200] hover:bg-[#f5c400] text-[#004222] font-bold text-sm px-6 py-3 rounded-md shadow transition-all">
+                        Campagna Abbonamenti 2026/27 →
                     </a>
                     <a href="#prima-squadra" class="bg-white/10 hover:bg-white/20 text-white font-semibold text-sm px-6 py-3 rounded-md border border-white/20 transition-all">
                         Rosa della Prima Squadra
@@ -111,40 +116,83 @@
                 </div>
             </div>
 
-            <!-- Matchday Card -->
-            <div class="lg:col-span-5">
-                <div class="bg-[#ffd200] text-[#004222] p-6 rounded-xl shadow-2xl space-y-4">
-                    <div class="flex justify-between items-center pb-3 border-b border-[#004222]/15">
-                        <span class="bg-[#004222] text-white text-[11px] font-bold px-2.5 py-1 rounded uppercase tracking-wider">
+            <!-- Colonna Gare: Ultima Partita + Prossimo Turno -->
+            <div class="lg:col-span-5 space-y-3.5">
+                
+                <!-- 1. Scheda Ultima Partita (Compatta con Risultato e Marcatori) -->
+                <!-- wp:group {"className":"bg-white/95 text-slate-900 p-4 rounded-xl shadow-xl border border-white/30"} -->
+                <div class="bg-white/95 backdrop-blur-sm text-slate-900 p-4 rounded-xl shadow-xl border border-white/30 space-y-2.5">
+                    <div class="flex justify-between items-center pb-2 border-b border-slate-200">
+                        <span class="bg-[#00592e] text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">
+                            ULTIMO TURNO • RISULTATO
+                        </span>
+                        <span class="text-[11px] font-semibold text-emerald-800">Prima Categoria Gir. C</span>
+                    </div>
+
+                    <!-- Risultato gara -->
+                    <div class="flex justify-between items-center px-1 py-0.5">
+                        <div class="flex items-center gap-2">
+                            <img src="assets/img/stemma_usd_gialloverdi.png" alt="USD Gialloverdi" class="h-8 w-8 object-contain">
+                            <span class="font-['Plus_Jakarta_Sans'] font-extrabold text-sm text-slate-900">GIALLOVERDI</span>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <span class="font-['Plus_Jakarta_Sans'] font-black text-xl text-[#00592e] bg-[#ecfdf5] px-2.5 py-0.5 rounded border border-[#a7f3d0]">
+                                3 - 1
+                            </span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="font-['Plus_Jakarta_Sans'] font-extrabold text-sm text-slate-700">ORLANDINA</span>
+                            <div class="w-8 h-8 rounded-full bg-slate-200 text-slate-700 font-bold flex items-center justify-center text-[10px]">ORL</div>
+                        </div>
+                    </div>
+
+                    <!-- Marcatori -->
+                    <div class="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-600">
+                        <div class="flex items-center gap-1">
+                            <span class="text-[#00592e] font-bold">⚽ Marcatori:</span>
+                            <span class="font-medium">18' Romero, 54' Musarra (rig.), 78' Trusso</span>
+                        </div>
+                        <span class="text-[10px] font-bold text-slate-400 bg-slate-100 px-1.5 py-0.5 rounded">FT</span>
+                    </div>
+                </div>
+                <!-- /wp:group -->
+
+                <!-- 2. Scheda Prossimo Turno -->
+                <!-- wp:group {"className":"bg-[#ffd200] text-[#004222] p-5 rounded-xl shadow-2xl"} -->
+                <div class="bg-[#ffd200] text-[#004222] p-5 rounded-xl shadow-2xl space-y-3">
+                    <div class="flex justify-between items-center pb-2.5 border-b border-[#004222]/15">
+                        <span class="bg-[#004222] text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">
                             PROSSIMO TURNO
                         </span>
-                        <span class="text-xs font-bold text-[#004222]">Campionato Regionale</span>
+                        <span class="text-xs font-bold text-[#004222]">Prima Categoria • Girone C</span>
                     </div>
 
-                    <div class="text-center py-2 space-y-3">
+                    <div class="text-center py-1 space-y-2">
                         <div class="flex justify-around items-center">
                             <div class="text-center">
-                                <img src="assets/img/stemma_usd_gialloverdi.png" alt="USD Gialloverdi" class="h-14 w-14 mx-auto object-contain mb-1 drop-shadow">
-                                <span class="font-['Plus_Jakarta_Sans'] font-extrabold text-sm text-[#004222] block">GIALLOVERDI</span>
+                                <img src="assets/img/stemma_usd_gialloverdi.png" alt="USD Gialloverdi" class="h-12 w-12 mx-auto object-contain mb-1 drop-shadow">
+                                <span class="font-['Plus_Jakarta_Sans'] font-extrabold text-xs text-[#004222] block">GIALLOVERDI</span>
                             </div>
                             <div class="text-center">
-                                <span class="font-['Plus_Jakarta_Sans'] font-black text-2xl text-[#004222] block">VS</span>
-                                <span class="text-[11px] font-bold text-[#004222]/70 uppercase">Matchday</span>
+                                <span class="font-['Plus_Jakarta_Sans'] font-black text-xl text-[#004222] block">VS</span>
+                                <span class="text-[10px] font-bold text-[#004222]/70 uppercase">Giornata 2</span>
                             </div>
                             <div class="text-center">
-                                <div class="w-14 h-14 rounded-full bg-[#004222] text-white font-bold flex items-center justify-center mx-auto mb-1 text-sm shadow">AVV</div>
-                                <span class="font-['Plus_Jakarta_Sans'] font-extrabold text-sm text-[#004222] block">AVVERSARIO</span>
+                                <div class="w-12 h-12 rounded-full bg-[#004222] text-white font-bold flex items-center justify-center mx-auto mb-1 text-xs shadow">SF</div>
+                                <span class="font-['Plus_Jakarta_Sans'] font-extrabold text-xs text-[#004222] block">SAN FRATELLO</span>
                             </div>
                         </div>
-                        <p class="text-xs font-semibold text-[#004222] pt-1">Domenica alle ore 15:30 • Stadio Comunale Gialloverde</p>
+                        <p class="text-[11px] font-semibold text-[#004222]">Domenica alle ore 15:30 • Stadio Comunale</p>
                     </div>
 
-                    <div class="pt-2">
-                        <a href="#comunicati" class="block w-full bg-[#004222] hover:bg-[#003119] text-white text-center text-xs font-bold py-2.5 rounded-md transition-colors">
+                    <div class="pt-1">
+                        <a href="#comunicati" class="block w-full bg-[#004222] hover:bg-[#003119] text-white text-center text-xs font-bold py-2 rounded-md transition-colors">
                             Centro Partita e Notizie →
                         </a>
                     </div>
                 </div>
+                <!-- /wp:group -->
+
             </div>
 
         </div>
@@ -203,12 +251,12 @@
                             <span class="bg-[#f0fdf4] text-[#15803d] font-bold px-2 py-0.5 rounded">Sponsor</span>
                             <span class="text-slate-400">20 agosto 2026</span>
                         </div>
-                        <h3 class="font-bold text-lg text-slate-900 leading-snug">Rinnovata la partnership tecnica con Macron</h3>
+                        <h3 class="font-bold text-lg text-slate-900 leading-snug">Rinnovata la sponsorizzazione tecnica con Macron</h3>
                         <p class="text-slate-600 text-xs leading-relaxed">
                             Presentati i nuovi kit da gioco ufficiali e il materiale per tutte le formazioni del vivaio gialloverde.
                         </p>
                     </div>
-                    <a href="#sponsor" class="text-xs font-bold text-[#00592e] pt-3 border-t border-slate-100 block">Dettagli partnership →</a>
+                    <a href="#sponsor" class="text-xs font-bold text-[#00592e] pt-3 border-t border-slate-100 block">Dettagli sponsorizzazione →</a>
                 </div>
 
             </div>
@@ -258,12 +306,12 @@
 
                     <div class="mt-3 pt-2 border-t border-slate-100">
                         <!-- wp:details {"showContent":false,"summary":"Scheda tecnica"} -->
-                        <details class="wp-block-details text-xs"><summary>Scheda tecnica</summary>
+                        <details class="wp-block-details text-xs" name="player-roster"><summary>Scheda tecnica</summary>
                             <p class="text-slate-600 text-[11px] leading-relaxed mt-1">
-                                • <strong>Nascita:</strong> 14 maggio 1999<br>
-                                • <strong>Altezza:</strong> 1,87 m • Piede Destro<br>
-                                • <strong>Presenze:</strong> 58 gare (19 clean sheet)<br>
-                                • <strong>Nel club dal:</strong> 2021 (Vivaio)
+                                <strong>Nascita:</strong> 14 maggio 1999<br>
+                                <strong>Altezza:</strong> 1,87 m • Piede Destro<br>
+                                <strong>Presenze:</strong> 58 gare (19 clean sheet)<br>
+                                <strong>Nel club dal:</strong> 2021 (Vivaio)
                             </p>
                         </details>
                         <!-- /wp:details -->
@@ -292,12 +340,12 @@
 
                     <div class="mt-3 pt-2 border-t border-slate-100">
                         <!-- wp:details {"showContent":false,"summary":"Scheda tecnica"} -->
-                        <details class="wp-block-details text-xs"><summary>Scheda tecnica</summary>
+                        <details class="wp-block-details text-xs" name="player-roster"><summary>Scheda tecnica</summary>
                             <p class="text-slate-600 text-[11px] leading-relaxed mt-1">
-                                • <strong>Nascita:</strong> 22 marzo 2004<br>
-                                • <strong>Altezza:</strong> 1,82 m • Piede Destro<br>
-                                • <strong>Presenze:</strong> 36 presenze (2 reti)<br>
-                                • <strong>Nel club dal:</strong> 2022 (Settore giovanile)
+                                <strong>Nascita:</strong> 22 marzo 2004<br>
+                                <strong>Altezza:</strong> 1,82 m • Piede Destro<br>
+                                <strong>Presenze:</strong> 36 presenze (2 reti)<br>
+                                <strong>Nel club dal:</strong> 2022 (Settore giovanile)
                             </p>
                         </details>
                         <!-- /wp:details -->
@@ -326,12 +374,12 @@
 
                     <div class="mt-3 pt-2 border-t border-slate-100">
                         <!-- wp:details {"showContent":false,"summary":"Scheda tecnica"} -->
-                        <details class="wp-block-details text-xs"><summary>Scheda tecnica</summary>
+                        <details class="wp-block-details text-xs" name="player-roster"><summary>Scheda tecnica</summary>
                             <p class="text-slate-600 text-[11px] leading-relaxed mt-1">
-                                • <strong>Nascita:</strong> 9 novembre 1993<br>
-                                • <strong>Altezza:</strong> 1,85 m • Piede Destro<br>
-                                • <strong>Presenze:</strong> 44 presenze (4 reti)<br>
-                                • <strong>Nel club dal:</strong> 2023
+                                <strong>Nascita:</strong> 9 novembre 1993<br>
+                                <strong>Altezza:</strong> 1,85 m • Piede Destro<br>
+                                <strong>Presenze:</strong> 44 presenze (4 reti)<br>
+                                <strong>Nel club dal:</strong> 2023
                             </p>
                         </details>
                         <!-- /wp:details -->
@@ -360,12 +408,12 @@
 
                     <div class="mt-3 pt-2 border-t border-slate-100">
                         <!-- wp:details {"showContent":false,"summary":"Scheda tecnica"} -->
-                        <details class="wp-block-details text-xs"><summary>Scheda tecnica</summary>
+                        <details class="wp-block-details text-xs" name="player-roster"><summary>Scheda tecnica</summary>
                             <p class="text-slate-600 text-[11px] leading-relaxed mt-1">
-                                • <strong>Nascita:</strong> 18 luglio 2000<br>
-                                • <strong>Altezza:</strong> 1,84 m • Piede Sinistro<br>
-                                • <strong>Presenze:</strong> 51 presenze (1 rete)<br>
-                                • <strong>Nel club dal:</strong> 2022
+                                <strong>Nascita:</strong> 18 luglio 2000<br>
+                                <strong>Altezza:</strong> 1,84 m • Piede Sinistro<br>
+                                <strong>Presenze:</strong> 51 presenze (1 rete)<br>
+                                <strong>Nel club dal:</strong> 2022
                             </p>
                         </details>
                         <!-- /wp:details -->
@@ -394,12 +442,12 @@
 
                     <div class="mt-3 pt-2 border-t border-slate-100">
                         <!-- wp:details {"showContent":false,"summary":"Scheda tecnica"} -->
-                        <details class="wp-block-details text-xs"><summary>Scheda tecnica</summary>
+                        <details class="wp-block-details text-xs" name="player-roster"><summary>Scheda tecnica</summary>
                             <p class="text-slate-600 text-[11px] leading-relaxed mt-1">
-                                • <strong>Nascita:</strong> 5 febbraio 2003<br>
-                                • <strong>Altezza:</strong> 1,78 m • Piede Sinistro<br>
-                                • <strong>Presenze:</strong> 42 presenze (3 assist)<br>
-                                • <strong>Nel club dal:</strong> 2021 (Vivaio)
+                                <strong>Nascita:</strong> 5 febbraio 2003<br>
+                                <strong>Altezza:</strong> 1,78 m • Piede Sinistro<br>
+                                <strong>Presenze:</strong> 42 presenze (3 assist)<br>
+                                <strong>Nel club dal:</strong> 2021 (Vivaio)
                             </p>
                         </details>
                         <!-- /wp:details -->
@@ -428,12 +476,12 @@
 
                     <div class="mt-3 pt-2 border-t border-slate-100">
                         <!-- wp:details {"showContent":false,"summary":"Scheda tecnica"} -->
-                        <details class="wp-block-details text-xs"><summary>Scheda tecnica</summary>
+                        <details class="wp-block-details text-xs" name="player-roster"><summary>Scheda tecnica</summary>
                             <p class="text-slate-600 text-[11px] leading-relaxed mt-1">
-                                • <strong>Nascita:</strong> 30 settembre 2001<br>
-                                • <strong>Altezza:</strong> 1,77 m • Piede Destro<br>
-                                • <strong>Presenze:</strong> 39 presenze (5 reti)<br>
-                                • <strong>Nel club dal:</strong> 2023
+                                <strong>Nascita:</strong> 30 settembre 2001<br>
+                                <strong>Altezza:</strong> 1,77 m • Piede Destro<br>
+                                <strong>Presenze:</strong> 39 presenze (5 reti)<br>
+                                <strong>Nel club dal:</strong> 2023
                             </p>
                         </details>
                         <!-- /wp:details -->
@@ -462,12 +510,12 @@
 
                     <div class="mt-3 pt-2 border-t border-slate-100">
                         <!-- wp:details {"showContent":false,"summary":"Scheda tecnica"} -->
-                        <details class="wp-block-details text-xs"><summary>Scheda tecnica</summary>
+                        <details class="wp-block-details text-xs" name="player-roster"><summary>Scheda tecnica</summary>
                             <p class="text-slate-600 text-[11px] leading-relaxed mt-1">
-                                • <strong>Nascita:</strong> 12 gennaio 1998<br>
-                                • <strong>Altezza:</strong> 1,80 m • Piede Ambidestro<br>
-                                • <strong>Presenze:</strong> 78 presenze (12 reti)<br>
-                                • <strong>Nel club dal:</strong> 2020 (Capitano)
+                                <strong>Nascita:</strong> 12 gennaio 1998<br>
+                                <strong>Altezza:</strong> 1,80 m • Piede Ambidestro<br>
+                                <strong>Presenze:</strong> 78 presenze (12 reti)<br>
+                                <strong>Nel club dal:</strong> 2020 (Capitano)
                             </p>
                         </details>
                         <!-- /wp:details -->
@@ -496,12 +544,12 @@
 
                     <div class="mt-3 pt-2 border-t border-slate-100">
                         <!-- wp:details {"showContent":false,"summary":"Scheda tecnica"} -->
-                        <details class="wp-block-details text-xs"><summary>Scheda tecnica</summary>
+                        <details class="wp-block-details text-xs" name="player-roster"><summary>Scheda tecnica</summary>
                             <p class="text-slate-600 text-[11px] leading-relaxed mt-1">
-                                • <strong>Nascita:</strong> 16 aprile 2005<br>
-                                • <strong>Altezza:</strong> 1,74 m • Piede Destro<br>
-                                • <strong>Presenze:</strong> 22 presenze (3 reti)<br>
-                                • <strong>Nel club dal:</strong> 2024
+                                <strong>Nascita:</strong> 16 aprile 2005<br>
+                                <strong>Altezza:</strong> 1,74 m • Piede Destro<br>
+                                <strong>Presenze:</strong> 22 presenze (3 reti)<br>
+                                <strong>Nel club dal:</strong> 2024
                             </p>
                         </details>
                         <!-- /wp:details -->
@@ -530,12 +578,12 @@
 
                     <div class="mt-3 pt-2 border-t border-slate-100">
                         <!-- wp:details {"showContent":false,"summary":"Scheda tecnica"} -->
-                        <details class="wp-block-details text-xs"><summary>Scheda tecnica</summary>
+                        <details class="wp-block-details text-xs" name="player-roster"><summary>Scheda tecnica</summary>
                             <p class="text-slate-600 text-[11px] leading-relaxed mt-1">
-                                • <strong>Nascita:</strong> 8 giugno 2002<br>
-                                • <strong>Altezza:</strong> 1,76 m • Piede Sinistro<br>
-                                • <strong>Presenze:</strong> 48 presenze (9 reti)<br>
-                                • <strong>Nel club dal:</strong> 2022
+                                <strong>Nascita:</strong> 8 giugno 2002<br>
+                                <strong>Altezza:</strong> 1,76 m • Piede Sinistro<br>
+                                <strong>Presenze:</strong> 48 presenze (9 reti)<br>
+                                <strong>Nel club dal:</strong> 2022
                             </p>
                         </details>
                         <!-- /wp:details -->
@@ -564,12 +612,12 @@
 
                     <div class="mt-3 pt-2 border-t border-slate-100">
                         <!-- wp:details {"showContent":false,"summary":"Scheda tecnica"} -->
-                        <details class="wp-block-details text-xs"><summary>Scheda tecnica</summary>
+                        <details class="wp-block-details text-xs" name="player-roster"><summary>Scheda tecnica</summary>
                             <p class="text-slate-600 text-[11px] leading-relaxed mt-1">
-                                • <strong>Nascita:</strong> 19 ottobre 2006<br>
-                                • <strong>Altezza:</strong> 1,79 m • Piede Destro<br>
-                                • <strong>Presenze:</strong> 28 presenze (11 reti)<br>
-                                • <strong>Nel club dal:</strong> 2023 (Vivaio)
+                                <strong>Nascita:</strong> 19 ottobre 2006<br>
+                                <strong>Altezza:</strong> 1,79 m • Piede Destro<br>
+                                <strong>Presenze:</strong> 28 presenze (11 reti)<br>
+                                <strong>Nel club dal:</strong> 2023 (Vivaio)
                             </p>
                         </details>
                         <!-- /wp:details -->
@@ -598,12 +646,12 @@
 
                     <div class="mt-3 pt-2 border-t border-slate-100">
                         <!-- wp:details {"showContent":false,"summary":"Scheda tecnica"} -->
-                        <details class="wp-block-details text-xs"><summary>Scheda tecnica</summary>
+                        <details class="wp-block-details text-xs" name="player-roster"><summary>Scheda tecnica</summary>
                             <p class="text-slate-600 text-[11px] leading-relaxed mt-1">
-                                • <strong>Nascita:</strong> 3 marzo 1997<br>
-                                • <strong>Altezza:</strong> 1,83 m • Piede Destro<br>
-                                • <strong>Presenze:</strong> 45 presenze (22 reti)<br>
-                                • <strong>Nel club dal:</strong> 2023
+                                <strong>Nascita:</strong> 3 marzo 1997<br>
+                                <strong>Altezza:</strong> 1,83 m • Piede Destro<br>
+                                <strong>Presenze:</strong> 45 presenze (22 reti)<br>
+                                <strong>Nel club dal:</strong> 2023
                             </p>
                         </details>
                         <!-- /wp:details -->
@@ -632,12 +680,12 @@
 
                     <div class="mt-3 pt-2 border-t border-slate-100">
                         <!-- wp:details {"showContent":false,"summary":"Scheda tecnica"} -->
-                        <details class="wp-block-details text-xs"><summary>Scheda tecnica</summary>
+                        <details class="wp-block-details text-xs" name="player-roster"><summary>Scheda tecnica</summary>
                             <p class="text-slate-600 text-[11px] leading-relaxed mt-1">
-                                • <strong>Nascita:</strong> 27 agosto 2004<br>
-                                • <strong>Altezza:</strong> 1,81 m • Piede Sinistro<br>
-                                • <strong>Presenze:</strong> 19 presenze (7 reti)<br>
-                                • <strong>Nel club dal:</strong> 2024
+                                <strong>Nascita:</strong> 27 agosto 2004<br>
+                                <strong>Altezza:</strong> 1,81 m • Piede Sinistro<br>
+                                <strong>Presenze:</strong> 19 presenze (7 reti)<br>
+                                <strong>Nel club dal:</strong> 2024
                             </p>
                         </details>
                         <!-- /wp:details -->
@@ -692,9 +740,9 @@
 
                     <div class="mt-4 pt-3 border-t border-slate-100">
                         <!-- wp:details {"showContent":false,"summary":"Dettagli profilo"} -->
-                        <details class="wp-block-details text-xs"><summary>Dettagli profilo</summary>
+                        <details class="wp-block-details text-xs" name="staff-roster"><summary>Dettagli profilo</summary>
                             <p class="text-slate-600 text-xs leading-relaxed mt-2">
-                                • <strong>Incarico:</strong> Rappresentanza legale e istituzionale del club<br>• <strong>Progetto:</strong> Crescita del vivaio e sostenibilità sportiva
+                                <strong>Incarico:</strong> Rappresentanza legale e istituzionale del club<br><strong>Progetto:</strong> Crescita del vivaio e sostenibilità sportiva
                             </p>
                         </details>
                         <!-- /wp:details -->
@@ -723,9 +771,9 @@
 
                     <div class="mt-4 pt-3 border-t border-slate-100">
                         <!-- wp:details {"showContent":false,"summary":"Dettagli profilo"} -->
-                        <details class="wp-block-details text-xs"><summary>Dettagli profilo</summary>
+                        <details class="wp-block-details text-xs" name="staff-roster"><summary>Dettagli profilo</summary>
                             <p class="text-slate-600 text-xs leading-relaxed mt-2">
-                                • <strong>Panchina:</strong> 120 gare ufficiali<br>• <strong>Modulo tattico:</strong> 4-3-3 propositivo<br>• <strong>Nel club dal:</strong> 2022
+                                <strong>Panchina:</strong> 120 gare ufficiali<br><strong>Modulo tattico:</strong> 4-3-3 propositivo<br><strong>Nel club dal:</strong> 2022
                             </p>
                         </details>
                         <!-- /wp:details -->
@@ -754,9 +802,9 @@
 
                     <div class="mt-4 pt-3 border-t border-slate-100">
                         <!-- wp:details {"showContent":false,"summary":"Dettagli profilo"} -->
-                        <details class="wp-block-details text-xs"><summary>Dettagli profilo</summary>
+                        <details class="wp-block-details text-xs" name="staff-roster"><summary>Dettagli profilo</summary>
                             <p class="text-slate-600 text-xs leading-relaxed mt-2">
-                                • <strong>Competenze:</strong> Video analisi e tattica applicata<br>• <strong>Nel club dal:</strong> 2023
+                                <strong>Competenze:</strong> Video analisi e tattica applicata<br><strong>Nel club dal:</strong> 2023
                             </p>
                         </details>
                         <!-- /wp:details -->
@@ -769,7 +817,184 @@
         </div>
     </section>
 
-    <!-- 7. SCUOLA CALCIO E ORARI -->
+    <!-- 7. CAMPAGNA ABBONAMENTI 2026/2027 -->
+    <!-- wp:group {"metadata":{"name":"Campagna Abbonamenti 2026/2027"},"align":"full"} -->
+    <section id="abbonamenti" class="py-16 px-4 bg-gradient-to-b from-[#f8fafc] to-[#f1f5f9] border-b border-slate-200">
+        <div class="max-w-7xl mx-auto space-y-10">
+            
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-3 pb-4 border-b border-slate-200">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-wider text-[#00592e] bg-[#ecfdf5] px-2.5 py-1 rounded">
+                        CAMPAGNA ABBONAMENTI 2026-2027
+                    </span>
+                    <h2 class="font-['Plus_Jakarta_Sans'] font-extrabold text-3xl sm:text-4xl text-slate-900 mt-2">
+                        Abbonamento Stagionale &laquo;Come Più di Prima ti Amerò&raquo;
+                    </h2>
+                    <p class="text-xs text-slate-500 mt-1">Sostieni i colori gialloverdi al Comunale in tutte le 11 gare casalinghe del Campionato di Prima Categoria Girone C.</p>
+                </div>
+                <span class="text-xs font-bold text-[#00592e] bg-white px-3.5 py-2 rounded-lg border border-slate-200 shadow-sm shrink-0">
+                    Stagione Ufficiale 2026/27
+                </span>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                
+                <!-- Colonna Sinistra: Card Grafica Tessera Ufficiale (lg:col-span-5) -->
+                <!-- wp:column -->
+                <div class="lg:col-span-5 space-y-4">
+                    <div class="pro-card p-5 bg-white border-2 border-[#00592e] rounded-2xl shadow-lg relative overflow-hidden">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-[11px] font-bold uppercase tracking-wider text-[#00592e] bg-[#ecfdf5] px-2.5 py-0.5 rounded">
+                                FAC-SIMILE TESSERA UFFICIALE
+                            </span>
+                            <span class="text-[11px] font-extrabold text-amber-600 bg-amber-50 px-2 py-0.5 rounded">
+                                11 Gare Interne
+                            </span>
+                        </div>
+                        
+                        <!-- wp:image {"aspectRatio":"4/3","scale":"cover","sizeSlug":"large","linkDestination":"none","lightbox":{"enabled":true}} -->
+                        <figure class="wp-block-image size-large relative overflow-hidden rounded-xl border border-slate-200 bg-slate-100 shadow-sm group">
+                            <img src="assets/img/abbonamento_gialloverdi_2026_2027.jpg" alt="Tessera Abbonamento Stagionale USD Gialloverdi 2026-2027" class="w-full h-auto object-cover group-hover:scale-102 transition-transform duration-300"/>
+                            <div class="absolute bottom-2 right-2 bg-black/70 backdrop-blur-sm text-white text-[10px] font-medium px-2 py-1 rounded">
+                                Ingrandisci tessera 🔍
+                            </div>
+                        </figure>
+                        <!-- /wp:image -->
+
+                        <div class="mt-4 pt-3 border-t border-slate-100 text-xs text-slate-600 space-y-2">
+                            <div class="flex items-center gap-2">
+                                <span class="text-[#00592e] font-bold text-sm">✓</span>
+                                <span>Tessera personale numerata con caselle timbro per ogni turno casalingo</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="text-[#00592e] font-bold text-sm">✓</span>
+                                <span>Ritiro immediato presso la sede sociale o il botteghino dello stadio</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="text-[#00592e] font-bold text-sm">✓</span>
+                                <span>Validità per l'intero campionato Prima Categoria Girone C</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /wp:column -->
+
+                <!-- Colonna Destra: Tariffe & Modulo Prenotazione (lg:col-span-7) -->
+                <!-- wp:column -->
+                <div class="lg:col-span-7 space-y-6">
+                    
+                    <!-- 3 Piani Tariffari -->
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                        <!-- Tariffa 1: Ordinario -->
+                        <div class="pro-card p-4 bg-white border border-slate-200 rounded-xl shadow-sm flex flex-col justify-between">
+                            <div>
+                                <span class="text-[10px] font-bold uppercase text-slate-500 block">TESSERA ORDINARIA</span>
+                                <div class="mt-1 flex items-baseline gap-1">
+                                    <span class="text-3xl font-extrabold text-slate-900">€30</span>
+                                    <span class="text-[11px] text-slate-500">/ anno</span>
+                                </div>
+                                <p class="text-[11px] text-slate-600 mt-2 leading-relaxed">
+                                    Accesso a tutte le 11 gare interne di campionato nel settore Tribuna.
+                                </p>
+                            </div>
+                            <span class="mt-3 text-[10px] font-bold text-[#00592e] bg-[#ecfdf5] py-1 px-2 rounded text-center block">Circa €2,70 a gara</span>
+                        </div>
+
+                        <!-- Tariffa 2: Sostenitore (In Evidenza) -->
+                        <div class="pro-card p-4 bg-white border-2 border-[#00592e] rounded-xl shadow-md flex flex-col justify-between relative overflow-hidden">
+                            <div class="absolute top-0 right-0 bg-[#ffd200] text-[#004222] font-black text-[9px] px-2 py-0.5 rounded-bl uppercase">
+                                Più scelto
+                            </div>
+                            <div>
+                                <span class="text-[10px] font-bold uppercase text-[#00592e] block">SOSTENITORE GOLD</span>
+                                <div class="mt-1 flex items-baseline gap-1">
+                                    <span class="text-3xl font-extrabold text-[#00592e]">€50</span>
+                                    <span class="text-[11px] text-slate-500">/ anno</span>
+                                </div>
+                                <p class="text-[11px] text-slate-600 mt-2 leading-relaxed">
+                                    11 Gare campionato + amichevoli + <strong>sciarpa ufficiale in omaggio</strong>.
+                                </p>
+                            </div>
+                            <span class="mt-3 text-[10px] font-bold text-white bg-[#00592e] py-1 px-2 rounded text-center block">Gadget Club Incluso</span>
+                        </div>
+
+                        <!-- Tariffa 3: Ridotto -->
+                        <div class="pro-card p-4 bg-white border border-slate-200 rounded-xl shadow-sm flex flex-col justify-between">
+                            <div>
+                                <span class="text-[10px] font-bold uppercase text-slate-500 block">TESSERA RIDOTTO</span>
+                                <div class="mt-1 flex items-baseline gap-1">
+                                    <span class="text-3xl font-extrabold text-slate-900">€15</span>
+                                    <span class="text-[11px] text-slate-500">/ anno</span>
+                                </div>
+                                <p class="text-[11px] text-slate-600 mt-2 leading-relaxed">
+                                    Riservato a Under 18, Over 65 e genitori degli iscritti alla Scuola Calcio.
+                                </p>
+                            </div>
+                            <span class="mt-3 text-[10px] font-bold text-slate-700 bg-slate-100 py-1 px-2 rounded text-center block">Tariffa Agevolata</span>
+                        </div>
+                    </div>
+
+                    <!-- Modulo Richiesta Rapida Tessera -->
+                    <div class="pro-card p-6 bg-white border border-slate-200 rounded-2xl shadow-sm space-y-4">
+                        <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+                            <div>
+                                <h4 class="font-bold text-base text-slate-900">Richiedi la tua tessera online</h4>
+                                <p class="text-xs text-slate-500">Compila i campi: la segreteria preparerà il tuo abbonamento nominale.</p>
+                            </div>
+                            <span class="text-xs font-semibold text-[#00592e] bg-[#ecfdf5] px-2.5 py-1 rounded">Ritiro o spedizione</span>
+                        </div>
+
+                        <form onsubmit="event.preventDefault(); alert('Richiesta abbonamento ricevuta! La segreteria ti contatterà per il ritiro della tessera.'); this.reset();" class="space-y-4 text-xs">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block font-semibold text-slate-700 mb-1">Nome e Cognome *</label>
+                                    <input type="text" required placeholder="Mario Rossi" class="w-full p-2.5 bg-white border border-slate-300 text-slate-900 rounded-lg focus:ring-2 focus:ring-[#00592e] focus:border-[#00592e] outline-none">
+                                </div>
+                                <div>
+                                    <label class="block font-semibold text-slate-700 mb-1">Recapito Telefonico / WhatsApp *</label>
+                                    <input type="tel" required placeholder="333 1234567" class="w-full p-2.5 bg-white border border-slate-300 text-slate-900 rounded-lg focus:ring-2 focus:ring-[#00592e] focus:border-[#00592e] outline-none">
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block font-semibold text-slate-700 mb-1">Tipologia Tessera *</label>
+                                    <select required class="w-full p-2.5 bg-white border border-slate-300 text-slate-900 rounded-lg focus:ring-2 focus:ring-[#00592e] focus:border-[#00592e] outline-none">
+                                        <option value="ordinario">Tessera Ordinaria (€30)</option>
+                                        <option value="sostenitore">Tessera Sostenitore Gold + Sciarpa (€50)</option>
+                                        <option value="ridotto">Tessera Ridotto Under 18 / Over 65 (€15)</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block font-semibold text-slate-700 mb-1">Modalità di Ritiro *</label>
+                                    <select required class="w-full p-2.5 bg-white border border-slate-300 text-slate-900 rounded-lg focus:ring-2 focus:ring-[#00592e] focus:border-[#00592e] outline-none">
+                                        <option value="botteghino">Ritiro al botteghino (giorno gara)</option>
+                                        <option value="sede">Ritiro presso sede sociale a Tortorici</option>
+                                        <option value="domicilio">Consegna a domicilio (comune di Tortorici)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="flex flex-col sm:flex-row items-center gap-3 pt-2">
+                                <button type="submit" class="w-full sm:w-auto flex-1 bg-[#00592e] hover:bg-[#004222] text-white font-bold py-3 px-6 rounded-lg shadow transition-colors text-center">
+                                    Prenota Abbonamento Stagionale 2026/27 →
+                                </button>
+                                <a href="https://wa.me/393331234567?text=Vorrei%20informazioni%20sull%27abbonamento%20USD%20Gialloverdi" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1ebd5a] text-white font-bold py-3 px-5 rounded-lg shadow transition-colors">
+                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.074-2.029-.475-1.428-.588-2.346-2.047-2.417-2.143-.07-.096-.575-.765-.575-1.46 0-.694.364-1.036.494-1.179.13-.143.285-.179.38-.179.096 0 .191.001.274.005.088.004.205-.033.321.246.12.29.412 1.005.448 1.08.036.074.06.16.012.256-.048.096-.072.155-.143.24-.072.083-.153.185-.218.25-.072.072-.147.151-.063.296.084.144.375.62.805 1.003.555.494 1.023.647 1.168.719.144.072.228.06.312-.036.084-.096.36-419.456-.563.096-.144.192-.12.324-.072.132.048.837.395.981.467.144.072.24.108.276.168.036.06.036.348-.108.753z"/></svg>
+                                    <span>Prenota su WhatsApp</span>
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+                <!-- /wp:column -->
+
+            </div>
+
+        </div>
+    </section>
+    <!-- /wp:group -->
+
+    <!-- 8. SCUOLA CALCIO E ORARI -->
     <section id="scuola-calcio" class="py-16 px-4 bg-[#f8fafc] border-b border-slate-200">
         <div class="max-w-7xl mx-auto space-y-8">
             
@@ -884,18 +1109,156 @@
         </div>
     </section>
 
-    <!-- 9. PARTNER E SPONSOR REALI ESISTENTI -->
+    <!-- 10. SOSTIENI IL CLUB (Donazioni & Sostegno) -->
+    <!-- wp:group {"metadata":{"name":"Sostieni il Club"},"align":"full"} -->
+    <section id="supporta" class="py-16 px-4 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto space-y-10">
+            
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-3 pb-4 border-b border-slate-200">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-wider text-[#00592e] bg-[#ecfdf5] px-2.5 py-1 rounded">
+                        SOSTIENI I GIALLOVERDI
+                    </span>
+                    <h2 class="font-['Plus_Jakarta_Sans'] font-extrabold text-3xl sm:text-4xl text-slate-900 mt-2">
+                        Supporta la Nostra Passione e il Vivaio
+                    </h2>
+                    <p class="text-xs text-slate-500 mt-1">L'U.S.D. Gialloverdi è un'associazione sportiva dilettantistica radicata a Tortorici. Ogni donazione sostiene kit, trasferte e borse sportive per i nostri ragazzi.</p>
+                </div>
+                <span class="text-xs font-bold text-[#00592e] bg-[#ecfdf5] px-3.5 py-2 rounded-lg border border-[#a7f3d0] shrink-0">
+                    Trasparenza & No Profit
+                </span>
+            </div>
+
+            <!-- Griglia Metodi di Donazione (Bonifico Bancario, PayPal/Carte, 5x1000) -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <!-- Card 1: Bonifico Bancario -->
+                <!-- wp:column -->
+                <div class="pro-card p-6 bg-white border-2 border-slate-200 hover:border-[#00592e] rounded-2xl shadow-sm transition-all flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <div class="w-12 h-12 rounded-xl bg-[#ecfdf5] text-[#00592e] flex items-center justify-center font-bold text-2xl">
+                                <svg class="w-6 h-6 fill-none stroke-current stroke-2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 21h18M3 10h18M5 10v11M9 10v11M15 10v11M19 10v11M12 3L2 10h20L12 3z"/></svg>
+                            </div>
+                            <span class="text-[10px] font-bold uppercase bg-slate-100 text-slate-700 px-2 py-1 rounded">Bonifico SEPA</span>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-xl text-slate-900">Bonifico Bancario</h3>
+                            <p class="text-xs text-slate-500 mt-1">Conto corrente ufficiale intestato alla società sportiva.</p>
+                        </div>
+                        <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-200 text-xs space-y-2">
+                            <div>
+                                <span class="text-[10px] font-semibold text-slate-400 uppercase block">Intestatario</span>
+                                <span class="font-bold text-slate-800 text-xs">U.S.D. Gialloverdi</span>
+                            </div>
+                            <div>
+                                <span class="text-[10px] font-semibold text-slate-400 uppercase block">Banca</span>
+                                <span class="font-semibold text-slate-700 text-xs">Banca Sella • Agenzia di Tortorici</span>
+                            </div>
+                            <div>
+                                <span class="text-[10px] font-semibold text-slate-400 uppercase block">Codice IBAN</span>
+                                <span class="font-mono font-bold text-slate-900 text-xs select-all block bg-white px-2 py-1 rounded border border-slate-200 mt-0.5">
+                                    IT60 X 0326 8824 1005 2870 1234 56
+                                </span>
+                            </div>
+                            <div>
+                                <span class="text-[10px] font-semibold text-slate-400 uppercase block">Causale</span>
+                                <span class="text-[11px] text-slate-600 italic">Erogazione liberale a sostegno attività sportiva dilettantistica 2026/27</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button onclick="navigator.clipboard.writeText('IT60X0326882410052870123456'); alert('IBAN copiato negli appunti!');" class="w-full bg-slate-100 hover:bg-[#00592e] hover:text-white text-slate-800 font-bold py-2.5 px-4 rounded-lg transition-colors text-xs text-center border border-slate-200 flex items-center justify-center gap-2">
+                        <span>Copia codice IBAN</span>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+                    </button>
+                </div>
+                <!-- /wp:column -->
+
+                <!-- Card 2: PayPal & Carte -->
+                <!-- wp:column -->
+                <div class="pro-card p-6 bg-white border-2 border-[#0070ba] rounded-2xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <div class="w-12 h-12 rounded-xl bg-[#0070ba]/10 text-[#0070ba] flex items-center justify-center font-bold">
+                                <svg class="w-7 h-7 fill-[#0070ba]" viewBox="0 0 24 24"><path d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944.901C5.026.382 5.474 0 5.998 0h7.46c2.57 0 4.578.543 5.69 1.81 1.01 1.15 1.304 2.82.872 4.966-.021.103-.046.208-.073.313-.772 3.864-3.328 5.864-7.604 5.864h-2.22l-1.047 6.634a.641.641 0 0 1-.633.541h-1.367zm12.38-14.77c-.013-.082-.03-.163-.05-.244-.766-3.13-3.056-4.524-6.81-4.524H6.26L3.924 16.538h3.336l.835-5.289a.641.641 0 0 1 .633-.541h1.763c3.553 0 5.674-1.662 6.315-4.872.035-.175.064-.351.088-.528l.062-.541z"/></svg>
+                            </div>
+                            <span class="text-[10px] font-bold uppercase bg-[#e0f2fe] text-[#0369a1] px-2 py-1 rounded">Digitale Rapido</span>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-xl text-slate-900">PayPal & Carte</h3>
+                            <p class="text-xs text-slate-500 mt-1">Donazione immediata con qualsiasi carta di debito o credito.</p>
+                        </div>
+                        <div class="bg-sky-50/50 p-3.5 rounded-xl border border-sky-100 text-xs space-y-3">
+                            <p class="text-slate-600 text-xs leading-relaxed">
+                                Sostieni istantaneamente le spese correnti del vivaio, l'acquisto di palloni e le forniture mediche.
+                            </p>
+                            <div class="flex items-center gap-2 text-[11px] font-semibold text-slate-600">
+                                <span class="bg-white border border-slate-200 px-2.5 py-1 rounded">€10</span>
+                                <span class="bg-white border border-slate-200 px-2.5 py-1 rounded">€25</span>
+                                <span class="bg-white border border-slate-200 px-2.5 py-1 rounded">€50</span>
+                                <span class="bg-white border border-slate-200 px-2.5 py-1 rounded">Libera</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://www.paypal.com/donate" target="_blank" rel="noopener noreferrer" class="w-full bg-[#0070ba] hover:bg-[#005ea6] text-white font-bold py-2.5 px-4 rounded-lg transition-colors text-xs text-center shadow flex items-center justify-center gap-2">
+                        <span>Dona con PayPal / Carta</span>
+                        <span>↗</span>
+                    </a>
+                </div>
+                <!-- /wp:column -->
+
+                <!-- Card 3: 5 per Mille -->
+                <!-- wp:column -->
+                <div class="pro-card p-6 bg-white border-2 border-slate-200 hover:border-[#ffd200] rounded-2xl shadow-sm transition-all flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center font-bold text-2xl">
+                                <svg class="w-6 h-6 fill-none stroke-current stroke-2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                            </div>
+                            <span class="text-[10px] font-bold uppercase bg-amber-50 text-amber-700 px-2 py-1 rounded">Costo Zero</span>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-xl text-slate-900">Dona il 5 per Mille</h3>
+                            <p class="text-xs text-slate-500 mt-1">Non costa nulla al contribuente e dà linfa al territorio.</p>
+                        </div>
+                        <div class="bg-amber-50/40 p-3.5 rounded-xl border border-amber-200/60 text-xs space-y-2">
+                            <p class="text-slate-600 text-xs leading-relaxed">
+                                Nella tua dichiarazione dei redditi (730, Modello Redditi Persone Fisiche), firma nel riquadro:
+                            </p>
+                            <span class="font-semibold text-slate-800 text-[11px] block italic">&laquo;Sostegno alle Associazioni Sportive Dilettantistiche&raquo;</span>
+                            <div>
+                                <span class="text-[10px] font-semibold text-slate-400 uppercase block">Codice Fiscale Associazione</span>
+                                <span class="font-mono font-bold text-slate-900 text-xs select-all block bg-white px-2 py-1 rounded border border-slate-200 mt-0.5">
+                                    94002340835
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <button onclick="navigator.clipboard.writeText('94002340835'); alert('Codice Fiscale copiato negli appunti!');" class="w-full bg-slate-100 hover:bg-amber-500 hover:text-white text-slate-800 font-bold py-2.5 px-4 rounded-lg transition-colors text-xs text-center border border-slate-200 flex items-center justify-center gap-2">
+                        <span>Copia Codice Fiscale</span>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+                    </button>
+                </div>
+                <!-- /wp:column -->
+
+            </div>
+
+        </div>
+    </section>
+    <!-- /wp:group -->
+
+    <!-- 11. SPONSOR UFFICIALI -->
     <section id="sponsor" class="py-16 px-4 bg-[#f8fafc] border-b border-slate-200">
         <div class="max-w-7xl mx-auto space-y-8">
             
             <div class="max-w-3xl mx-auto text-center space-y-2">
                 <span class="text-xs font-bold uppercase tracking-wider text-[#00592e] bg-[#ecfdf5] px-2.5 py-1 rounded">
-                    I NOSTRI PARTNER
+                    I NOSTRI SPONSOR
                 </span>
                 <h2 class="font-['Plus_Jakarta_Sans'] font-extrabold text-3xl sm:text-4xl text-slate-900">
-                    Sponsor e Partner Ufficiali
+                    Sponsor Ufficiali
                 </h2>
-                <p class="text-xs text-slate-500">I brand che sostengono il progetto sportivo ed educativo dell'U.S.D. Gialloverdi</p>
+                <p class="text-xs text-slate-500">I brand e le imprese che sostengono il progetto sportivo ed educativo dell'U.S.D. Gialloverdi</p>
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -925,7 +1288,7 @@
                             <img src="assets/img/sponsor_sanbenedetto.png" alt="San Benedetto" class="max-w-full max-h-full object-contain">
                         </div>
                         <div>
-                            <span class="text-[10px] font-bold text-[#00592e] uppercase block">BEVERAGE PARTNER</span>
+                            <span class="text-[10px] font-bold text-[#00592e] uppercase block">BEVERAGE SPONSOR</span>
                             <h4 class="font-bold text-xl text-slate-900 group-hover:text-[#00592e] transition-colors">San Benedetto</h4>
                             <p class="text-xs text-slate-500">Idratazione ufficiale degli atleti</p>
                         </div>
@@ -943,7 +1306,7 @@
                             <img src="assets/img/sponsor_lavazza.png" alt="Lavazza" class="max-w-full max-h-full object-contain">
                         </div>
                         <div>
-                            <span class="text-[10px] font-bold text-sky-700 uppercase block">OFFICIAL PARTNER</span>
+                            <span class="text-[10px] font-bold text-sky-700 uppercase block">OFFICIAL SPONSOR</span>
                             <h4 class="font-bold text-xl text-slate-900 group-hover:text-[#00592e] transition-colors">Lavazza</h4>
                             <p class="text-xs text-slate-500">Eccellenza e ospitalità sportiva</p>
                         </div>
@@ -961,7 +1324,7 @@
                             <img src="assets/img/sponsor_decathlon.png" alt="Decathlon" class="max-w-full max-h-full object-contain">
                         </div>
                         <div>
-                            <span class="text-[10px] font-bold text-[#00592e] uppercase block">SPORTING GOODS</span>
+                            <span class="text-[10px] font-bold text-[#00592e] uppercase block">SPONSOR ATTREZZATURE</span>
                             <h4 class="font-bold text-xl text-slate-900 group-hover:text-[#00592e] transition-colors">Decathlon</h4>
                             <p class="text-xs text-slate-500">Attrezzature e materiale tecnico</p>
                         </div>
@@ -979,7 +1342,7 @@
                             <img src="assets/img/sponsor_bancasella.png" alt="Banca Sella" class="max-w-full max-h-full object-contain">
                         </div>
                         <div>
-                            <span class="text-[10px] font-bold text-[#b45309] uppercase block">BANKING PARTNER</span>
+                            <span class="text-[10px] font-bold text-[#b45309] uppercase block">BANKING SPONSOR</span>
                             <h4 class="font-bold text-xl text-slate-900 group-hover:text-[#00592e] transition-colors">Banca Sella</h4>
                             <p class="text-xs text-slate-500">Servizi e pagamenti digitali</p>
                         </div>
@@ -997,7 +1360,7 @@
                             <img src="assets/img/sponsor_enel.png" alt="Enel Energia" class="max-w-full max-h-full object-contain">
                         </div>
                         <div>
-                            <span class="text-[10px] font-bold text-rose-600 uppercase block">ENERGY PARTNER</span>
+                            <span class="text-[10px] font-bold text-rose-600 uppercase block">ENERGY SPONSOR</span>
                             <h4 class="font-bold text-xl text-slate-900 group-hover:text-[#00592e] transition-colors">Enel Energia</h4>
                             <p class="text-xs text-slate-500">Energia verde e sostenibilità</p>
                         </div>
@@ -1013,7 +1376,7 @@
         </div>
     </section>
 
-    <!-- 10. CONTATTI E SEGRETERIA -->
+    <!-- 12. CONTATTI E SEGRETERIA -->
     <section id="contatti" class="py-16 px-4 bg-white border-b border-slate-200">
         <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
             
@@ -1086,7 +1449,7 @@
         </div>
     </section>
 
-    <!-- 11. TESSERAMENTO TELEMATICO -->
+    <!-- 13. TESSERAMENTO TELEMATICO -->
     <section id="tesseramento" class="py-16 px-4 bg-[#f8fafc] border-b border-slate-200">
         <div class="max-w-3xl mx-auto pro-card p-6 sm:p-10 border-2 border-[#00592e] space-y-6 bg-white rounded-xl shadow-md">
             <span class="text-xs font-bold uppercase tracking-wider text-[#00592e] bg-[#ecfdf5] px-2.5 py-1 rounded">
@@ -1135,12 +1498,13 @@
         </div>
     </section>
 
-    <!-- 12. FOOTER -->
+    <!-- 14. FOOTER -->
     <footer class="bg-[#004222] text-white/80 py-12 text-xs border-t border-[#003119] text-center space-y-3 px-4">
         <img src="assets/img/stemma_usd_gialloverdi.png" alt="USD Gialloverdi" class="h-14 w-14 mx-auto object-contain mb-2 drop-shadow">
-        <p class="font-['Plus_Jakarta_Sans'] font-bold text-xl text-white">U.S.D. GIALLOVERDI 1923</p>
-        <p class="text-white/70">Codice fiscale: 90012345678 • Matricola Federale: 998877 • Stadio Comunale Gialloverde</p>
-        <p class="text-[#ffd200] font-semibold">Tema Full Gutenberg Clean Pro • Ispirato alla leggibilità di Norwich City FC ed FC Nantes</p>
+        <p class="font-['Plus_Jakarta_Sans'] font-bold text-xl text-white">U.S.D. GIALLOVERDI</p>
+        <p class="text-white/85">Campionato di Prima Categoria Girone C • FIGC - LND Comitato Regionale Sicilia</p>
+        <p class="text-white/70">Matricola FIGC: 944319 • Codice Fiscale: 94002340835 • Stadio Comunale &laquo;Enzo Vasi&raquo; - Tortorici (ME)</p>
+        <p class="text-[#ffd200] font-semibold text-[11px]">&copy; 2026 U.S.D. Gialloverdi • Tutti i diritti riservati</p>
     </footer>
 
 </body>

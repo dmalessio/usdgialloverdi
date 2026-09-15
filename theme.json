@@ -2,7 +2,7 @@
     "$schema": "https://schemas.wp.org/trunk/theme.json",
     "version": 3,
     "title": "USD Gialloverdi - Official Gutenberg Block Theme",
-    "description": "Tema WordPress Full Site Editing 100% nativo basato sulla leggibilità moderna dei grandi club europei (Norwich City FC ed FC Nantes) con colori sociali giallo-verdi.",
+    "description": "Tema WordPress Full Site Editing 100% nativo basato sulla leggibilità moderna con colori sociali giallo-verdi per l'U.S.D. Gialloverdi (Prima Categoria Girone C).",
     "settings": {
         "appearanceTools": true,
         "layout": {

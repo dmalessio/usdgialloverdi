@@ -2,7 +2,7 @@
 /**
  * Title: Card Sponsor Clean Pro
  * Slug: usd-tortorici-pro/sponsor-card
- * Categories: usd-tortorici, partners
+ * Categories: usd-tortorici, sponsors
  * Description: Box sponsor ad alto contrasto con logo nitido e link esterno.
  */
 ?>

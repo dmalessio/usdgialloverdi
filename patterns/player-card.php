@@ -22,13 +22,13 @@
     <!-- /wp:paragraph -->
 
     <!-- wp:details {"showContent":false,"summary":"Scheda tecnica"} -->
-    <details class="wp-block-details"><summary>Scheda tecnica</summary>
+    <details class="wp-block-details" name="player-roster"><summary>Scheda tecnica</summary>
         <!-- wp:paragraph {"style":{"typography":{"fontSize":"0.75rem"}},"textColor":"text-muted"} -->
         <p class="has-text-muted-color has-text-color" style="font-size:0.75rem">
-            • <strong>Ruolo:</strong> Portiere (#1)<br>
-            • <strong>Altezza e piede:</strong> 1,87 m • Destro<br>
-            • <strong>Presenze:</strong> 58 gare (19 clean sheet)<br>
-            • <strong>Nel club dal:</strong> 2021 (Vivaio)
+            <strong>Ruolo:</strong> Portiere (#1)<br>
+            <strong>Altezza e piede:</strong> 1,87 m • Destro<br>
+            <strong>Presenze:</strong> 58 gare (19 clean sheet)<br>
+            <strong>Nel club dal:</strong> 2021 (Vivaio)
         </p>
         <!-- /wp:paragraph -->
     </details>

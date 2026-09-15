@@ -1,9 +1,9 @@
 /*
-Theme Name: USD Tortorici - Gutenberg Clean Pro (Norwich & Nantes Inspired)
+Theme Name: USD Gialloverdi - Gutenberg Clean Pro
 Theme URI: https://usdtortorici.it
-Author: USD Tortorici
+Author: USD Gialloverdi
 Author URI: https://usdtortorici.it
-Description: Tema Full Site Editing (FSE) basato su massima leggibilità, font moderni geometrici (Plus Jakarta Sans e Inter) e palette societaria giallo-verde su base chiara, ispirato all'eccellenza visiva di club come Norwich City FC ed FC Nantes.
+Description: Tema Full Site Editing (FSE) basato su massima leggibilità, font moderni geometrici (Plus Jakarta Sans e Inter) e palette societaria giallo-verde su base chiara per l'U.S.D. Gialloverdi (Prima Categoria Girone C).
 Version: 1.0.0
 Requires at least: 6.5
 Tested up to: 6.7
@@ -113,10 +113,13 @@ h1, h2, h3, h4, h5, h6 {
 /* White Card Modern */
 .pro-card {
   background-color: #ffffff;
-  border: 1px solid var(--wp--preset--color--border-subtle);
-  border-radius: 10px;
+  border: 1.5px solid var(--wp--preset--color--border-subtle);
+  border-radius: 12px;
   box-shadow: var(--wp--preset--shadow--card-modern);
-  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  position: relative; /* Fondamentale per ancorare l'overlay interno Gutenberg */
+  overflow: hidden;   /* Previene sbordamenti e rispetta il raggio di curvatura */
+  overflow-anchor: none; /* Previene scatti dello scroll della finestra */
 }
 
 .pro-card:hover {
@@ -124,36 +127,161 @@ h1, h2, h3, h4, h5, h6 {
   border-color: #cbd5e1;
 }
 
-/* Accordion / Details */
-details.wp-block-details {
+/* Quando la scheda è aperta, è la CARD STESSA ad accendersi di verde societario:
+   in questo modo il bordo verde segue esattamente il raggio di curvatura dei 4 angoli
+   senza tagli, sbordamenti o allineamenti difettosi. */
+.pro-card:has(details.wp-block-details[open]) {
+  border-color: var(--wp--preset--color--club-green) !important;
+  box-shadow: var(--wp--preset--shadow--elevated), 0 0 0 1px var(--wp--preset--color--club-green) !important;
+}
+
+/* Il contenitore inferiore mantiene un'altezza minima fissa sia con details aperto che chiuso:
+   impedisce alla figurina di accorciarsi ed espandersi al clic, eliminando qualsiasi "bump" della pagina */
+.pro-card > div:last-child {
+  min-height: 44px;
+  box-sizing: border-box;
+}
+
+/* Accordion / Details standard Gutenberg (Stato base e chiuso) */
+.pro-card details.wp-block-details {
   border: 1px solid var(--wp--preset--color--border-subtle);
   border-radius: 6px;
   background-color: #f8fafc;
-  padding: 0.5rem 0.75rem;
-  transition: background-color 0.2s ease;
+  padding: 0.4rem 0.65rem;
+  transition: all 0.15s ease;
+  position: static; /* Resta nel flusso naturale: zero collasso della card */
 }
 
-details.wp-block-details summary {
+.pro-card details.wp-block-details summary {
   cursor: pointer;
   font-weight: 600;
   color: var(--wp--preset--color--club-green);
   font-family: var(--wp--preset--font-family--jakarta);
-  font-size: 0.825rem;
+  font-size: 0.8rem;
   padding: 2px 0;
-  outline: none;
+  outline: none !important;
   user-select: none;
+  -webkit-user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
 }
 
-details.wp-block-details summary:hover {
+.pro-card details.wp-block-details summary:hover {
   color: var(--wp--preset--color--club-green-dark);
 }
 
-details.wp-block-details[open] {
-  background-color: #ffffff;
+.pro-card details.wp-block-details summary:focus,
+.pro-card details.wp-block-details summary:focus-visible {
+  outline: none !important;
 }
 
-details.wp-block-details[open] summary {
-  border-bottom: 1px solid var(--wp--preset--color--border-subtle);
-  margin-bottom: 6px;
-  padding-bottom: 6px;
+.pro-card details.wp-block-details summary::-webkit-details-marker {
+  display: none;
 }
+
+/* Indicatore freccia quando chiuso */
+.pro-card details.wp-block-details:not([open]) summary::after {
+  content: "▾";
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--wp--preset--color--club-green);
+}
+
+/* ==========================================================================
+   STATO APERTO: IL PULSANTE 'CHIUDI' RESTA ALLA STESSA ALTEZZA ESATTA
+   Il mouse non deve spostarsi per chiudere: il pulsante è nello stesso punto.
+   L'ingombro resta identico nel flusso naturale, eliminando ogni bump della pagina.
+   ========================================================================== */
+
+.pro-card details.wp-block-details[open] {
+  background-color: var(--wp--preset--color--club-green);
+  border-color: var(--wp--preset--color--club-green-dark);
+  box-shadow: 0 2px 6px rgba(0, 89, 46, 0.25);
+}
+
+.pro-card details.wp-block-details[open] summary {
+  font-size: 0; /* Nasconde il testo originale a scheda chiusa */
+  justify-content: center;
+  color: #ffffff;
+  padding: 2px 0;
+}
+
+.pro-card details.wp-block-details[open] summary::after {
+  content: "Chiudi scheda ✕";
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.02em;
+  white-space: nowrap !important;
+}
+
+.pro-card details.wp-block-details[open]:hover {
+  background-color: var(--wp--preset--color--club-green-dark);
+}
+
+/* Il pannello dati copre la parte superiore della figurina (foto + nome)
+   e si ferma esattamente sopra il pulsante di chiusura in basso */
+.pro-card details.wp-block-details[open] > :not(summary) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 52px; /* Lascia scoperto esattamente il pulsante alla base della figurina */
+  background-color: #ffffff;
+  z-index: 25;
+  padding: 0.85rem 0.85rem 0.65rem 0.85rem;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 1.5px solid var(--wp--preset--color--border-subtle);
+  animation: cardDetailsFadeIn 0.12s ease-out;
+  overflow-y: auto;
+}
+
+/* Intestazione della scheda tecnica dentro il pannello (Calciatori) */
+.pro-card details.wp-block-details[open] > :not(summary)::before,
+#prima-squadra .pro-card details.wp-block-details[open] > :not(summary)::before {
+  content: "Scheda Tecnica";
+  display: block;
+  font-family: var(--wp--preset--font-family--jakarta);
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--wp--preset--color--club-green-dark);
+  border-bottom: 1.5px solid var(--wp--preset--color--border-subtle);
+  padding-bottom: 0.3rem;
+  margin-bottom: 0.45rem;
+}
+
+/* Intestazione personalizzata per lo Staff Tecnico e Dirigenza */
+#staff .pro-card details.wp-block-details[open] > :not(summary)::before {
+  content: "Profilo e Incarico";
+}
+
+#staff .pro-card details.wp-block-details[open] summary::after {
+  content: "Chiudi profilo ✕";
+}
+
+.pro-card details.wp-block-details[open] p {
+  font-size: 0.69rem !important;
+  line-height: 1.45 !important;
+  color: #334155 !important;
+  margin: 0 !important;
+  background: #f8fafc;
+  padding: 0.45rem 0.55rem !important;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+}
+
+.pro-card details.wp-block-details[open] p strong {
+  color: var(--wp--preset--color--club-green-dark);
+  font-weight: 700;
+}
+
