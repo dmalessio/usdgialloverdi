@@ -820,6 +820,7 @@
     <!-- 7. CAMPAGNA ABBONAMENTI 2026/2027 -->
     <!-- wp:group {"metadata":{"name":"Campagna Abbonamenti 2026/2027"},"align":"full"} -->
     <!-- SEZIONE CAMPAGNA ABBONAMENTI 2026-2027 (wp:group) -->
+    <!-- SEZIONE CAMPAGNA ABBONAMENTI 2026-2027 (wp:group) -->
     <section id="abbonamenti" class="py-20 px-4 bg-gradient-to-b from-[#00381d] to-[#004f29] text-white border-y border-[#002e17] relative overflow-hidden">
         
         <!-- Texture di sfondo -->
@@ -827,24 +828,53 @@
 
         <div class="max-w-7xl mx-auto space-y-12 relative z-10">
             
-            <!-- Intestazione Campagna con lo Slogan Ufficiale -->
-            <div class="text-center max-w-3xl mx-auto space-y-4">
-                <div class="inline-flex items-center gap-2 bg-[#ffd200] text-[#004222] px-3.5 py-1.5 rounded-full font-bold text-xs uppercase tracking-wider shadow-md">
-                    <span>🎟️</span>
-                    <span>CAMPAGNA ABBONAMENTI 2026-2027</span>
-                </div>
+            <!-- Intestazione Campagna con Slogan & Tessera Ufficiale in Primo Piano -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                 
-                <h2 class="font-['Plus_Jakarta_Sans'] font-black text-3xl sm:text-5xl lg:text-6xl text-white tracking-tight leading-tight drop-shadow-sm">
-                    «Come prima, più di prima, ti amerò»
-                </h2>
+                <div class="lg:col-span-7 space-y-4 text-left">
+                    <div class="inline-flex items-center gap-2 bg-[#ffd200] text-[#004222] px-3.5 py-1.5 rounded-full font-bold text-xs uppercase tracking-wider shadow-md">
+                        <span>🎟️</span>
+                        <span>CAMPAGNA ABBONAMENTI 2026-2027</span>
+                    </div>
+                    
+                    <h2 class="font-['Plus_Jakarta_Sans'] font-black text-3xl sm:text-5xl text-white tracking-tight leading-tight drop-shadow-sm">
+                        «Come prima, più di prima, ti amerò»
+                    </h2>
 
-                <p class="text-slate-200 text-sm sm:text-base leading-relaxed">
-                    Rinnoviamo la promessa e la passione per i nostri colori. Sottoscrivi l'abbonamento per la nuova stagione di <strong>Prima Categoria</strong> e vivi ogni minuto allo Stadio Comunale al fianco dei Gialloverdi.
-                </p>
+                    <p class="text-slate-200 text-sm sm:text-base leading-relaxed max-w-2xl">
+                        Rinnoviamo la promessa e la passione per i nostri colori. Sottoscrivi la tessera ufficiale per la nuova stagione di <strong>Prima Categoria</strong> e vivi ogni emozione allo Stadio Comunale al fianco dei Gialloverdi.
+                    </p>
+
+                    <div class="flex flex-wrap gap-3 pt-2">
+                        <a href="#modulo-abbonamento" class="bg-[#ffd200] hover:bg-[#f5c400] text-[#004222] font-bold text-xs sm:text-sm px-6 py-3 rounded-xl shadow-lg transition-all flex items-center gap-2">
+                            <span>Prenota la Tua Tessera</span>
+                            <span>→</span>
+                        </a>
+                        <a href="#tariffe-abbonamento" class="bg-white/10 hover:bg-white/20 text-white font-semibold text-xs sm:text-sm px-5 py-3 rounded-xl border border-white/20 transition-all">
+                            Scopri i Piani & Prezzi
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Showcase Immagine Tessera Ufficiale -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative group max-w-md w-full">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-[#ffd200] to-[#22c55e] rounded-2xl blur opacity-40 group-hover:opacity-80 transition duration-300"></div>
+                        <div class="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-[#ffd200]/80 bg-slate-900">
+                            <!-- wp:image {"aspectRatio":"16/9","scale":"cover","sizeSlug":"large","linkDestination":"none","lightbox":{"enabled":true}} -->
+                            <img src="assets/img/abbonamento_gialloverdi_2026_2027.jpg" alt="Tessera Abbonamento U.S.D. Gialloverdi 2026-2027 - Come prima piu di prima ti amero" class="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.02] cursor-pointer">
+                            <!-- /wp:image -->
+                            <div class="absolute bottom-2 right-2 bg-black/70 backdrop-blur-sm text-[#ffd200] text-[10px] font-bold px-2 py-0.5 rounded shadow">
+                                🔍 Clicca per ingrandire
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
             <!-- Griglia dei 3 Piani Tariffari -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+            <div id="tariffe-abbonamento" class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch pt-4">
                 
                 <!-- 1. Piano Ridotto -->
                 <div class="bg-white text-slate-900 rounded-2xl p-7 flex flex-col justify-between space-y-6 shadow-xl border-2 border-transparent hover:border-[#ffd200] transition-all">
@@ -862,10 +892,10 @@
                         </div>
                         <ul class="text-xs text-slate-700 space-y-2.5 pt-2 border-t border-slate-100">
                             <li class="flex items-center gap-2">
-                                <span class="text-[#00592e] font-bold">✓</span> Accesso a tutte le 13 gare casalinghe
+                                <span class="text-[#00592e] font-bold">✓</span> Accesso a tutte le gare casalinghe
                             </li>
                             <li class="flex items-center gap-2">
-                                <span class="text-[#00592e] font-bold">✓</span> Tessera plastificata personalizzata
+                                <span class="text-[#00592e] font-bold">✓</span> Tessera plastificata con box perforabili
                             </li>
                             <li class="flex items-center gap-2">
                                 <span class="text-[#00592e] font-bold">✓</span> Ingresso agevolato e senza code
@@ -879,7 +909,7 @@
 
                 <!-- 2. Piano Sostenitore GOLD (In Evidenza) -->
                 <div class="bg-white text-slate-900 rounded-2xl p-7 flex flex-col justify-between space-y-6 shadow-2xl border-4 border-[#ffd200] relative transform md:-translate-y-2">
-                    <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-[#ffd200] text-[#004222] text-[10px] font-black uppercase px-4 py-1 rounded-full tracking-wider shadow">
+                    <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-[#ffd200] text-[#004222] text-[10px] font-black uppercase px-4 py-1 rounded-full tracking-wider shadow whitespace-nowrap">
                         ★ PIÙ SCELTO DAI SOSTENITORI ★
                     </div>
                     <div class="space-y-4">
@@ -896,7 +926,7 @@
                         </div>
                         <ul class="text-xs text-slate-700 space-y-2.5 pt-2 border-t border-slate-100 font-medium">
                             <li class="flex items-center gap-2">
-                                <span class="text-[#00592e] font-bold">✓</span> <strong>Tutte le 13 gare</strong> casalinghe di campionato
+                                <span class="text-[#00592e] font-bold">✓</span> <strong>Tutte le gare</strong> casalinghe di campionato
                             </li>
                             <li class="flex items-center gap-2">
                                 <span class="text-[#00592e] font-bold">✓</span> <strong>Sciarpa ufficiale jacquard</strong> in omaggio
@@ -930,13 +960,13 @@
                         </div>
                         <ul class="text-xs text-slate-700 space-y-2.5 pt-2 border-t border-slate-100">
                             <li class="flex items-center gap-2">
-                                <span class="text-[#00592e] font-bold">✓</span> Accesso a tutte le 13 gare casalinghe
+                                <span class="text-[#00592e] font-bold">✓</span> Accesso a tutte le gare casalinghe
                             </li>
                             <li class="flex items-center gap-2">
                                 <span class="text-[#00592e] font-bold">✓</span> Risparmio del 30% rispetto al singolo biglietto
                             </li>
                             <li class="flex items-center gap-2">
-                                <span class="text-[#00592e] font-bold">✓</span> Tessera digitale & fisica da collezione
+                                <span class="text-[#00592e] font-bold">✓</span> Tessera fisica da collezione
                             </li>
                         </ul>
                     </div>
